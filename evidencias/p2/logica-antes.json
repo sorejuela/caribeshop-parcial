@@ -1,0 +1,370 @@
+[
+  {
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true
+      }
+    },
+    "etag": "\"11\"",
+    "hardwareProfile": {
+      "vmSize": "Standard_B2pls_v2"
+    },
+    "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26/virtualMachines/1",
+    "identity": {
+      "principalId": "5260149d-3be1-4fa4-9c56-0c6a749812df",
+      "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "type": "SystemAssigned"
+    },
+    "instanceId": "1",
+    "instanceView": {
+      "bootDiagnostics": {},
+      "computerName": "vmss-csorejuela26000001",
+      "disks": [
+        {
+          "name": "vmss-csorejuela26_vmss-csorejuela26_1_OsDisk_1_7ed7dddad213422d9837812785a5681c",
+          "statuses": [
+            {
+              "code": "ProvisioningState/succeeded",
+              "displayStatus": "Provisioning succeeded",
+              "level": "Info",
+              "time": "2026-11-24T02:42:13.1178705+00:00"
+            }
+          ]
+        }
+      ],
+      "extensions": [],
+      "hyperVGeneration": "V2",
+      "osName": "ubuntu",
+      "osVersion": "24.04",
+      "placementGroupId": "ebca8ae9-09cd-4781-ab48-6c860c47560a",
+      "platformFaultDomain": 0,
+      "statuses": [
+        {
+          "code": "ProvisioningState/succeeded",
+          "displayStatus": "Provisioning succeeded",
+          "level": "Info",
+          "time": "2026-11-24T03:36:03.781042+00:00"
+        },
+        {
+          "code": "PowerState/running",
+          "displayStatus": "VM running",
+          "level": "Info"
+        }
+      ],
+      "vmAgent": {
+        "extensionHandlers": [
+          {
+            "status": {
+              "code": "ProvisioningState/succeeded",
+              "displayStatus": "Ready",
+              "level": "Info",
+              "message": "Plugin enabled"
+            },
+            "type": "Microsoft.CPlat.Core.RunCommandLinux",
+            "typeHandlerVersion": "1.0.12"
+          }
+        ],
+        "statuses": [
+          {
+            "code": "ProvisioningState/succeeded",
+            "displayStatus": "Ready",
+            "level": "Info",
+            "message": "Guest Agent is running",
+            "time": "2026-11-24T04:23:02+00:00"
+          }
+        ],
+        "vmAgentVersion": "2.16.0.2"
+      },
+      "vmHealth": {
+        "status": {
+          "code": "HealthState/healthy",
+          "displayStatus": "The VM is reporting itself as healthy",
+          "level": "Info",
+          "time": "2026-11-24T04:23:38+00:00"
+        }
+      }
+    },
+    "latestModelApplied": true,
+    "location": "canadacentral",
+    "modelDefinitionApplied": "VirtualMachineScaleSet",
+    "name": "vmss-csorejuela26_1",
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26/virtualMachines/1/networkInterfaces/app",
+          "resourceGroup": "rg-csorejuela26"
+        }
+      ]
+    },
+    "networkProfileConfiguration": {
+      "networkInterfaceConfigurations": [
+        {
+          "disableTcpStateTracking": false,
+          "dnsSettings": {
+            "dnsServers": []
+          },
+          "enableAcceleratedNetworking": false,
+          "enableIPForwarding": false,
+          "ipConfigurations": [
+            {
+              "loadBalancerBackendAddressPools": [
+                {
+                  "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Network/loadBalancers/lb-csorejuela26/backendAddressPools/app",
+                  "resourceGroup": "rg-csorejuela26"
+                }
+              ],
+              "name": "private",
+              "primary": true,
+              "privateIPAddressVersion": "IPv4",
+              "subnet": {
+                "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Network/virtualNetworks/vnet-csorejuela26/subnets/snet-app",
+                "resourceGroup": "rg-csorejuela26"
+              }
+            }
+          ],
+          "name": "app",
+          "primary": true
+        }
+      ]
+    },
+    "osProfile": {
+      "adminUsername": "azureuser",
+      "allowExtensionOperations": true,
+      "computerName": "vmss-csorejuela26000001",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "enableVMAgentPlatformUpdates": true,
+        "provisionVMAgent": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "keyData": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIch7MlmlblcmeoNnWixApWhCZPv5a1UeMqtYK6wPMcS caribeshop-lab",
+              "path": "/home/azureuser/.ssh/authorized_keys"
+            }
+          ]
+        }
+      },
+      "requireGuestProvisionSignal": true,
+      "secrets": []
+    },
+    "provisioningState": "Succeeded",
+    "resilientVMDeletionStatus": "Disabled",
+    "resourceGroup": "rg-csorejuela26",
+    "securityProfile": {
+      "encryptionAtHost": true
+    },
+    "sku": {
+      "name": "Standard_B2pls_v2",
+      "tier": "Standard"
+    },
+    "storageProfile": {
+      "dataDisks": [],
+      "diskControllerType": "SCSI",
+      "imageReference": {
+        "exactVersion": "24.04.202611170",
+        "offer": "ubuntu-24_04-lts",
+        "publisher": "Canonical",
+        "sku": "server-arm64",
+        "version": "24.04.202611170"
+      },
+      "osDisk": {
+        "caching": "ReadWrite",
+        "createOption": "FromImage",
+        "diskSizeGB": 30,
+        "managedDisk": {
+          "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/disks/vmss-csorejuela26_vmss-csorejuela26_1_OsDisk_1_7ed7dddad213422d9837812785a5681c",
+          "resourceGroup": "rg-csorejuela26",
+          "storageAccountType": "Standard_LRS"
+        },
+        "name": "vmss-csorejuela26_vmss-csorejuela26_1_OsDisk_1_7ed7dddad213422d9837812785a5681c",
+        "osType": "Linux",
+        "writeAcceleratorEnabled": false
+      }
+    },
+    "tags": {},
+    "timeCreated": "2026-11-24T02:42:09.4888939+00:00",
+    "type": "Microsoft.Compute/virtualMachineScaleSets/virtualMachines",
+    "vmId": "06c2b92f-a407-4a08-a432-be1a65c8b835",
+    "zones": [
+      "1"
+    ]
+  },
+  {
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true
+      }
+    },
+    "etag": "\"1\"",
+    "hardwareProfile": {
+      "vmSize": "Standard_B2pls_v2"
+    },
+    "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26/virtualMachines/2",
+    "identity": {
+      "principalId": "5260149d-3be1-4fa4-9c56-0c6a749812df",
+      "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "type": "SystemAssigned"
+    },
+    "instanceId": "2",
+    "instanceView": {
+      "bootDiagnostics": {},
+      "computerName": "vmss-csorejuela26000002",
+      "disks": [
+        {
+          "name": "vmss-csorejuela26_vmss-csorejuela26_2_OsDisk_1_815ceb674ef64a7b800c7ded35bf5ac4",
+          "statuses": [
+            {
+              "code": "ProvisioningState/succeeded",
+              "displayStatus": "Provisioning succeeded",
+              "level": "Info",
+              "time": "2026-11-24T02:56:43.3965038+00:00"
+            }
+          ]
+        }
+      ],
+      "hyperVGeneration": "V2",
+      "osName": "ubuntu",
+      "osVersion": "24.04",
+      "placementGroupId": "ebca8ae9-09cd-4781-ab48-6c860c47560a",
+      "platformFaultDomain": 0,
+      "statuses": [
+        {
+          "code": "ProvisioningState/succeeded",
+          "displayStatus": "Provisioning succeeded",
+          "level": "Info",
+          "time": "2026-11-24T02:57:10.2954842+00:00"
+        },
+        {
+          "code": "PowerState/running",
+          "displayStatus": "VM running",
+          "level": "Info"
+        }
+      ],
+      "vmAgent": {
+        "extensionHandlers": [],
+        "statuses": [
+          {
+            "code": "ProvisioningState/succeeded",
+            "displayStatus": "Ready",
+            "level": "Info",
+            "message": "Guest Agent is running",
+            "time": "2026-11-24T04:23:32+00:00"
+          }
+        ],
+        "vmAgentVersion": "2.16.0.2"
+      },
+      "vmHealth": {
+        "status": {
+          "code": "HealthState/healthy",
+          "displayStatus": "The VM is reporting itself as healthy",
+          "level": "Info",
+          "time": "2026-11-24T04:23:42+00:00"
+        }
+      }
+    },
+    "latestModelApplied": true,
+    "location": "canadacentral",
+    "modelDefinitionApplied": "VirtualMachineScaleSet",
+    "name": "vmss-csorejuela26_2",
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26/virtualMachines/2/networkInterfaces/app",
+          "resourceGroup": "rg-csorejuela26"
+        }
+      ]
+    },
+    "networkProfileConfiguration": {
+      "networkInterfaceConfigurations": [
+        {
+          "disableTcpStateTracking": false,
+          "dnsSettings": {
+            "dnsServers": []
+          },
+          "enableAcceleratedNetworking": false,
+          "enableIPForwarding": false,
+          "ipConfigurations": [
+            {
+              "loadBalancerBackendAddressPools": [
+                {
+                  "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Network/loadBalancers/lb-csorejuela26/backendAddressPools/app",
+                  "resourceGroup": "rg-csorejuela26"
+                }
+              ],
+              "name": "private",
+              "primary": true,
+              "privateIPAddressVersion": "IPv4",
+              "subnet": {
+                "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Network/virtualNetworks/vnet-csorejuela26/subnets/snet-app",
+                "resourceGroup": "rg-csorejuela26"
+              }
+            }
+          ],
+          "name": "app",
+          "primary": true
+        }
+      ]
+    },
+    "osProfile": {
+      "adminUsername": "azureuser",
+      "allowExtensionOperations": true,
+      "computerName": "vmss-csorejuela26000002",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "enableVMAgentPlatformUpdates": true,
+        "provisionVMAgent": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "keyData": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIch7MlmlblcmeoNnWixApWhCZPv5a1UeMqtYK6wPMcS caribeshop-lab",
+              "path": "/home/azureuser/.ssh/authorized_keys"
+            }
+          ]
+        }
+      },
+      "requireGuestProvisionSignal": true,
+      "secrets": []
+    },
+    "provisioningState": "Succeeded",
+    "resilientVMDeletionStatus": "Disabled",
+    "resourceGroup": "rg-csorejuela26",
+    "securityProfile": {
+      "encryptionAtHost": true
+    },
+    "sku": {
+      "name": "Standard_B2pls_v2",
+      "tier": "Standard"
+    },
+    "storageProfile": {
+      "dataDisks": [],
+      "diskControllerType": "SCSI",
+      "imageReference": {
+        "exactVersion": "24.04.202611170",
+        "offer": "ubuntu-24_04-lts",
+        "publisher": "Canonical",
+        "sku": "server-arm64",
+        "version": "24.04.202611170"
+      },
+      "osDisk": {
+        "caching": "ReadWrite",
+        "createOption": "FromImage",
+        "diskSizeGB": 30,
+        "managedDisk": {
+          "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/disks/vmss-csorejuela26_vmss-csorejuela26_2_OsDisk_1_815ceb674ef64a7b800c7ded35bf5ac4",
+          "resourceGroup": "rg-csorejuela26",
+          "storageAccountType": "Standard_LRS"
+        },
+        "name": "vmss-csorejuela26_vmss-csorejuela26_2_OsDisk_1_815ceb674ef64a7b800c7ded35bf5ac4",
+        "osType": "Linux",
+        "writeAcceleratorEnabled": false
+      }
+    },
+    "tags": {},
+    "timeCreated": "2026-11-24T02:56:39.9643928+00:00",
+    "type": "Microsoft.Compute/virtualMachineScaleSets/virtualMachines",
+    "vmId": "53254912-165e-45c7-80da-f87e414c7bc4",
+    "zones": [
+      "3"
+    ]
+  }
+]

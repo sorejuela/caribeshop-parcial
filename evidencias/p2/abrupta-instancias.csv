@@ -1,0 +1,9 @@
+timestamp,instances,capacity,instance_ids,zones,healthy,hostnames
+1795495038.169564,2,2,2;4,3;1,2,vmss-csorejuela26000002;vmss-csorejuela26000004
+1795495055.49997,2,2,2;4,3;1,2,vmss-csorejuela26000002;vmss-csorejuela26000004
+1795495073.792694,2,1,2;4,3;1,1,vmss-csorejuela26000002;vmss-csorejuela26000004
+1795495090.964726,1,2,4,1,1,vmss-csorejuela26000004
+1795495107.964488,2,2,4;5,1;3,1,vmss-csorejuela26000004;vmss-csorejuela26000005
+1795495124.769291,2,2,4;5,1;3,1,vmss-csorejuela26000004;vmss-csorejuela26000005
+1795495141.967322,2,2,4;5,1;3,1,vmss-csorejuela26000004;vmss-csorejuela26000005
+1795495159.057197,2,2,4;5,1;3,1,vmss-csorejuela26000004;vmss-csorejuela26000005

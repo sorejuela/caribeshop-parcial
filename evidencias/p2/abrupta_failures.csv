@@ -1,0 +1,3 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+GET,/work,"ConnectionRefusedError(61, 'Connection refused')",1,2026-11-24T04:37:51Z,2026-11-24T04:37:51Z
+GET,/work,"ConnectTimeoutError(<HTTPConnection(host='20.151.31.218', port=80) at 0x107f75bd0>, 'Connection to 20.151.31.218 timed out. (connect timeout=5)')",1,2026-11-24T04:37:57Z,2026-11-24T04:37:57Z

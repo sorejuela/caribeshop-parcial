@@ -1,0 +1,18 @@
+{
+  "mode": "logica",
+  "instance_id": "1",
+  "hostname": "vmss-csorejuela26000001",
+  "vm_id": "06c2b92f-a407-4a08-a432-be1a65c8b835",
+  "load_started": 1795494225.5192351,
+  "users": 2,
+  "traffic_ready": 1795494258.57093,
+  "baseline_requests": 100,
+  "baseline_hosts": [
+    "vmss-csorejuela26000001",
+    "vmss-csorejuela26000002"
+  ],
+  "command_sent": 1795494258.570936,
+  "injected": 1795494266.7800329,
+  "command_completed": 1795494295.15487,
+  "recovered": 1795495029.782113
+}

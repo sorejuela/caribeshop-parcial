@@ -1,0 +1,9 @@
+{
+  "start": 1795495068.904934,
+  "end": 1795495170.792846,
+  "window_seconds": 101.8879120349884,
+  "requests": 362,
+  "errors": 2,
+  "error_percent": 0.5524861878453039,
+  "last_affected_response_seconds": 2.5086121559143066
+}

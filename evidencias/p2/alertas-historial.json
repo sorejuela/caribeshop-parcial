@@ -1,0 +1,115 @@
+{
+  "value": [
+    {
+      "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/microsoft.network/loadbalancers/lb-csorejuela26/providers/Microsoft.AlertsManagement/alerts/44126c37-7bc8-410f-9b8a-fec0479ff000",
+      "name": "unhealthy-csorejuela26",
+      "properties": {
+        "essentials": {
+          "actionStatus": {
+            "isSuppressed": false
+          },
+          "alertRule": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Insights/metricAlerts/unhealthy-csorejuela26",
+          "alertState": "New",
+          "description": "Al menos una sonda del balanceador est\u00e1 fallando.",
+          "lastModifiedDateTime": "2026-11-24T04:27:09.8045359Z",
+          "lastModifiedUserName": "System",
+          "monitorCondition": "Fired",
+          "monitorService": "Platform",
+          "severity": "Sev2",
+          "signalType": "Metric",
+          "sourceCreatedId": "c41aefb4-032e-4e2b-80a2-41e39d7c1425_rg-csorejuela26_Microsoft.Insights_metricAlerts_unhealthy-csorejuela26_-221710596",
+          "startDateTime": "2026-11-24T04:27:09.8045359Z",
+          "targetResource": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/microsoft.network/loadbalancers/lb-csorejuela26",
+          "targetResourceGroup": "rg-csorejuela26",
+          "targetResourceName": "lb-csorejuela26",
+          "targetResourceType": "microsoft.network/loadbalancers"
+        }
+      },
+      "type": "microsoft.alertsmanagement/alerts"
+    },
+    {
+      "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/microsoft.network/loadbalancers/lb-csorejuela26/providers/Microsoft.AlertsManagement/alerts/39575b09-656a-4bf0-b26d-3cf2af52f000",
+      "name": "unhealthy-csorejuela26",
+      "properties": {
+        "essentials": {
+          "actionStatus": {
+            "isSuppressed": false
+          },
+          "alertRule": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Insights/metricAlerts/unhealthy-csorejuela26",
+          "alertState": "New",
+          "description": "Al menos una sonda del balanceador est\u00e1 fallando.",
+          "lastModifiedDateTime": "2026-11-24T03:41:12.3533459Z",
+          "lastModifiedUserName": "System",
+          "monitorCondition": "Resolved",
+          "monitorConditionResolvedDateTime": "2026-11-24T03:41:12.6719105Z",
+          "monitorService": "Platform",
+          "severity": "Sev2",
+          "signalType": "Metric",
+          "sourceCreatedId": "c41aefb4-032e-4e2b-80a2-41e39d7c1425_rg-csorejuela26_Microsoft.Insights_metricAlerts_unhealthy-csorejuela26_-221710596",
+          "startDateTime": "2026-11-24T03:32:17.7047324Z",
+          "targetResource": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/microsoft.network/loadbalancers/lb-csorejuela26",
+          "targetResourceGroup": "rg-csorejuela26",
+          "targetResourceName": "lb-csorejuela26",
+          "targetResourceType": "microsoft.network/loadbalancers"
+        }
+      },
+      "type": "microsoft.alertsmanagement/alerts"
+    },
+    {
+      "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/microsoft.network/loadbalancers/lb-csorejuela26/providers/Microsoft.AlertsManagement/alerts/50720363-f5ce-4a00-b5a5-ab3dbba2f000",
+      "name": "unhealthy-csorejuela26",
+      "properties": {
+        "essentials": {
+          "actionStatus": {
+            "isSuppressed": false
+          },
+          "alertRule": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Insights/metricAlerts/unhealthy-csorejuela26",
+          "alertState": "New",
+          "description": "Al menos una sonda del balanceador est\u00e1 fallando.",
+          "lastModifiedDateTime": "2026-11-24T03:13:08.3851871Z",
+          "lastModifiedUserName": "System",
+          "monitorCondition": "Resolved",
+          "monitorConditionResolvedDateTime": "2026-11-24T03:13:08.7432729Z",
+          "monitorService": "Platform",
+          "severity": "Sev2",
+          "signalType": "Metric",
+          "sourceCreatedId": "c41aefb4-032e-4e2b-80a2-41e39d7c1425_rg-csorejuela26_Microsoft.Insights_metricAlerts_unhealthy-csorejuela26_-221710596",
+          "startDateTime": "2026-11-24T03:09:09.3570414Z",
+          "targetResource": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/microsoft.network/loadbalancers/lb-csorejuela26",
+          "targetResourceGroup": "rg-csorejuela26",
+          "targetResourceName": "lb-csorejuela26",
+          "targetResourceType": "microsoft.network/loadbalancers"
+        }
+      },
+      "type": "microsoft.alertsmanagement/alerts"
+    },
+    {
+      "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/microsoft.network/loadbalancers/lb-csorejuela26/providers/Microsoft.AlertsManagement/alerts/2681deeb-175c-405e-a662-9f3f1ae2f000",
+      "name": "unhealthy-csorejuela26",
+      "properties": {
+        "essentials": {
+          "actionStatus": {
+            "isSuppressed": false
+          },
+          "alertRule": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Insights/metricAlerts/unhealthy-csorejuela26",
+          "alertState": "New",
+          "description": "Al menos una sonda del balanceador est\u00e1 fallando.",
+          "lastModifiedDateTime": "2026-11-24T02:48:08.1792007Z",
+          "lastModifiedUserName": "System",
+          "monitorCondition": "Resolved",
+          "monitorConditionResolvedDateTime": "2026-11-24T02:48:08.4857568Z",
+          "monitorService": "Platform",
+          "severity": "Sev2",
+          "signalType": "Metric",
+          "sourceCreatedId": "c41aefb4-032e-4e2b-80a2-41e39d7c1425_rg-csorejuela26_Microsoft.Insights_metricAlerts_unhealthy-csorejuela26_-221710596",
+          "startDateTime": "2026-11-24T02:45:17.184238Z",
+          "targetResource": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/microsoft.network/loadbalancers/lb-csorejuela26",
+          "targetResourceGroup": "rg-csorejuela26",
+          "targetResourceName": "lb-csorejuela26",
+          "targetResourceType": "microsoft.network/loadbalancers"
+        }
+      },
+      "type": "microsoft.alertsmanagement/alerts"
+    }
+  ]
+}

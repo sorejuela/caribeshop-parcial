@@ -172,6 +172,28 @@
           "Decrease",
           "AutoscaleScaleActionsLog",
           "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/microsoft.insights/autoscalesettings/autoscale-csorejuela26"
+        ],
+        [
+          "41e8294a-e315-481f-a81b-db0558c72a6f",
+          "Azure",
+          "2026-11-24T04:38:11.1888693Z",
+          "/SUBSCRIPTIONS/C41AEFB4-032E-4E2B-80A2-41E39D7C1425/RESOURCEGROUPS/RG-CSOREJUELA26/PROVIDERS/MICROSOFT.INSIGHTS/AUTOSCALESETTINGS/AUTOSCALE-CSOREJUELA26",
+          "InstanceScaleAction",
+          "AutoscaleScaleActions",
+          "Succeeded",
+          "",
+          "b4484a3e-9282-4a5a-affc-6267954c909e",
+          "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26",
+          null,
+          "",
+          1,
+          2,
+          "",
+          "",
+          "",
+          "Increase",
+          "AutoscaleScaleActionsLog",
+          "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/microsoft.insights/autoscalesettings/autoscale-csorejuela26"
         ]
       ]
     }

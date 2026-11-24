@@ -1,0 +1,10 @@
+{
+  "value": [
+    {
+      "code": "ProvisioningState/succeeded",
+      "displayStatus": "Provisioning succeeded",
+      "level": "Info",
+      "message": "Enable succeeded: \n[stdout]\nINJECTED=1795494266.780032981\nvmss-csorejuela26000001\nhealth=503\n\n[stderr]\n"
+    }
+  ]
+}

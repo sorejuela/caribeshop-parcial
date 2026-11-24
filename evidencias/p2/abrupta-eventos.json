@@ -1,0 +1,18 @@
+{
+  "mode": "abrupta",
+  "instance_id": "2",
+  "hostname": "vmss-csorejuela26000002",
+  "vm_id": "53254912-165e-45c7-80da-f87e414c7bc4",
+  "load_started": 1795495035.850799,
+  "users": 2,
+  "traffic_ready": 1795495068.90493,
+  "baseline_requests": 118,
+  "baseline_hosts": [
+    "vmss-csorejuela26000002",
+    "vmss-csorejuela26000004"
+  ],
+  "command_sent": 1795495068.904934,
+  "injected": 1795495068.904934,
+  "command_completed": 1795495104.1662312,
+  "recovered": 1795495170.792846
+}
