@@ -1,0 +1,27 @@
+{
+  "armRoleReceivers": [],
+  "automationRunbookReceivers": [],
+  "azureAppPushReceivers": [],
+  "azureFunctionReceivers": [],
+  "emailReceivers": [
+    {
+      "emailAddress": "sorejuela@utb.edu.co",
+      "name": "equipo",
+      "status": "Enabled",
+      "useCommonAlertSchema": true
+    }
+  ],
+  "enabled": true,
+  "eventHubReceivers": [],
+  "groupShortName": "caribeshop",
+  "id": "/subscriptions/C41AEFB4-032E-4E2B-80A2-41E39D7C1425/resourceGroups/rg-csorejuela26/providers/microsoft.insights/actionGroups/alerts-csorejuela26",
+  "itsmReceivers": [],
+  "location": "Global",
+  "logicAppReceivers": [],
+  "name": "alerts-csorejuela26",
+  "resourceGroup": "rg-csorejuela26",
+  "smsReceivers": [],
+  "type": "Microsoft.Insights/ActionGroups",
+  "voiceReceivers": [],
+  "webhookReceivers": []
+}

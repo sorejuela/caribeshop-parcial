@@ -1,0 +1,10 @@
+{
+  "value": [
+    {
+      "code": "ProvisioningState/succeeded",
+      "displayStatus": "Provisioning succeeded",
+      "level": "Info",
+      "message": "Enable succeeded: \n[stdout]\nvmss-csorejuela26000001\nactive\nNAME        SIZE\nsda  32213303296\nsr0       657408\n\n[stderr]\n"
+    }
+  ]
+}

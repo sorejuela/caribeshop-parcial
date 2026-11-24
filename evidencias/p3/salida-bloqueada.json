@@ -1,0 +1,10 @@
+{
+  "value": [
+    {
+      "code": "ProvisioningState/succeeded",
+      "displayStatus": "Provisioning succeeded",
+      "level": "Info",
+      "message": "Enable succeeded: \n[stdout]\n172.66.147.243  STREAM example.com\n172.66.147.243  DGRAM  \n172.66.147.243  RAW    \n104.20.23.154   STREAM \n104.20.23.154   DGRAM  \n104.20.23.154   RAW    \nexit=28\n{\"secret_read\": true, \"length\": 32, \"instance\": \"vmss-csorejuela26000001\"}\n[stderr]\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host example.com:443 was resolved.\n* IPv6: (none)\n* IPv4: 104.20.23.154, 172.66.147.243\n*   Trying 104.20.23.154:443...\n\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0* ipv4 connect timeout after 2500ms, move on!\n*   Trying 172.66.147.243:443...\n\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0* ipv4 connect timeout after 2499ms, move on!\n* Failed to connect to example.com port 443 after 5002 ms: Timeout was reached\n\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\n* Closing connection\ncurl: (28) Failed to connect to example.com port 443 after 5002 ms: Timeout was reached\n"
+    }
+  ]
+}

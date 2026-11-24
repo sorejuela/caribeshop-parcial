@@ -7,6 +7,5 @@ AzureDiagnostics
 | order by TimeGenerated desc
 
 // Ejecutar por separado para el historial de autoscale.
-AzureDiagnostics
-| where Category == "AutoscaleScaleActions"
+AutoscaleScaleActionsLog
 | order by TimeGenerated asc

@@ -1,0 +1,41 @@
+ERROR: (RequestDisallowedByPolicy) Resource 'stcsorejuela26deny' was disallowed by policy. Policy identifiers: '[{"policyAssignment":{"name":"deny-storage-keys","id":"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Authorization/policyAssignments/deny-storage-keys"},"policyDefinition":{"name":"CaribeShop: impedir Shared Key en Storage","id":"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/providers/Microsoft.Authorization/policyDefinitions/csorejuela26-deny-storage-keys","version":"1.0.0"}}]'.
+Code: RequestDisallowedByPolicy
+Message: Resource 'stcsorejuela26deny' was disallowed by policy. Policy identifiers: '[{"policyAssignment":{"name":"deny-storage-keys","id":"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Authorization/policyAssignments/deny-storage-keys"},"policyDefinition":{"name":"CaribeShop: impedir Shared Key en Storage","id":"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/providers/Microsoft.Authorization/policyDefinitions/csorejuela26-deny-storage-keys","version":"1.0.0"}}]'.
+Target: stcsorejuela26deny
+Additional Information:Type: PolicyViolation
+Info: {
+    "evaluationDetails": {
+        "evaluatedExpressions": [
+            {
+                "result": "True",
+                "expressionKind": "Field",
+                "expression": "type",
+                "path": "type",
+                "expressionValue": "Microsoft.Storage/storageAccounts",
+                "targetValue": "Microsoft.Storage/storageAccounts",
+                "operator": "Equals"
+            },
+            {
+                "result": "True",
+                "expressionKind": "Field",
+                "expression": "Microsoft.Storage/storageAccounts/allowSharedKeyAccess",
+                "path": "properties.allowSharedKeyAccess",
+                "expressionValue": true,
+                "targetValue": "False",
+                "operator": "NotEquals"
+            }
+        ]
+    },
+    "policyDefinitionId": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/providers/Microsoft.Authorization/policyDefinitions/csorejuela26-deny-storage-keys",
+    "policyDefinitionName": "csorejuela26-deny-storage-keys",
+    "policyDefinitionDisplayName": "CaribeShop: impedir Shared Key en Storage",
+    "policyDefinitionVersion": "1.0.0",
+    "policyDefinitionEffect": "Deny",
+    "policyAssignmentId": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Authorization/policyAssignments/deny-storage-keys",
+    "policyAssignmentName": "deny-storage-keys",
+    "policyAssignmentDisplayName": "",
+    "policyAssignmentScope": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26",
+    "policyAssignmentParameters": {},
+    "policyExemptionIds": [],
+    "policyEnrollmentIds": []
+}

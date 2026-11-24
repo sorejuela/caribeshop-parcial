@@ -1,0 +1,911 @@
+[
+  {
+    "authorization": {
+      "action": "Microsoft.Insights/autoScaleSettings/write",
+      "scope": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Insights/autoScaleSettings/autoscale-csorejuela26"
+    },
+    "caller": "sorejuela@utb.edu.co",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "claims": {
+      "acrs": "p1,urn:user:registersecurityinfo",
+      "aio": "AcQAO/8eAAAATjvuAzxcO5h/bdTiYG3d/jdrhrWk7i+nVSCtW0InCc6IOGq2geLOBDzXbMsP96nfZMufYx/e+Jk9apLeALrqkUhvJHIPXskcM50pKTGWULaGhjkBHFJKQXak5WohqnBobb1W22+wL5y5dohpEtrP28s1ICIxxjqvPexkYQZUOUQVpPZpYrLli8XAjmJ19NbY4R89rCyimrXljobWKV8vB7kF6AX8gx/4Jern0jkrC+4xMqw7NvbEGhbahJBcjiCc",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.azure.com",
+      "exp": "1795491197",
+      "groups": "114d2040-4b5e-4117-bd3f-5a6260183076,f4e95858-afed-4f55-ac2f-6ee61de7a689,190fe8fa-6475-43ce-9e47-405f89a9fb04,4d22e819-0f97-4e12-bf2b-53d20fd5626c,e3a64720-b438-42b5-8b7e-2df48b669c7d,5c02a5aa-e698-422c-90cc-f9029cc11a55,5d7fa823-1402-4809-afdb-16f9472a578b,13961815-dbfd-4a17-a1cc-13be691d407a,2eeac305-d776-4d72-a2e7-d876ea69826b,70cb0edc-b752-4938-bc01-4e2f2421933c,b5a37f74-fb1b-448b-8063-0b0a8a05e5c3,a9b15e0c-40e9-4783-b465-d788711442c5,0b87f088-f184-4307-878b-c3116841d4f2,172fefd9-d28b-4d8d-806c-584af47a337f,2b690ffc-a6b4-4a20-b668-bbda0bb49be4,28cdfe26-ce28-4931-830e-8bf3d8c71556,708140c6-3db8-4fbe-8b5c-ab960a857ac3,a1b40582-07f4-47f0-b2b8-33854087c624,ca81f41c-90b2-4183-a5f0-c24cc3d665e5,85b7058a-9283-439a-a1fc-79c36e601bc5",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "b812070b-9f0a-49b6-930c-ffa76d2e22b0",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Santiago Andres",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "sorejuela@utb.edu.co",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "AmSB69pl9RqUWgJz5T3VJt6vTwkFsePYYtAJ3UpLWv8",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Orejuela Cueter",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "sorejuela@utb.edu.co",
+      "iat": "1795487118",
+      "idtyp": "user",
+      "ipaddr": "179.33.207.190",
+      "iss": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "name": "Santiago Andres Orejuela Cueter",
+      "nbf": "1795487118",
+      "onprem_sid": "S-1-5-21-1875160959-3801935606-161467275-25872",
+      "puid": "100320019566D8E5",
+      "rh": "1.ATQAUJ5k6tInGEOcuS_P_hb9QUZIf3kAutdPukPawfj2MBMAAM40AA.",
+      "sid": "00a9192a-65c6-10ff-5b56-29157b66a536",
+      "uti": "bM3FXD8bsECK4bUpKwUjAA",
+      "ver": "1.0",
+      "wids": "b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_act_fct": "3 5",
+      "xms_aud_guid": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "xms_ftd": "JL1dDZX-mhIDIU7DBVXlxRMn4e0ISjj80jZDKAT_NGkBdXNzb3V0aC1kc21z",
+      "xms_idrel": "1 28",
+      "xms_sub_fct": "20 3",
+      "xms_tcdt": "1378746733"
+    },
+    "correlationId": "7846bccc-6a79-c545-6906-5565f42375df",
+    "description": "",
+    "eventDataId": "81a58d12-e526-4c0d-8dfd-2c043f85cd8f",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2026-11-24T03:06:35.709889Z",
+    "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/Microsoft.Insights/autoscalesettings/autoscale-csorejuela26/events/81a58d12-e526-4c0d-8dfd-2c043f85cd8f/ticks/639310863957098890",
+    "level": "Informational",
+    "operationId": "3fa494bb-6ee0-4b82-825e-73db5aa805c7",
+    "operationName": {
+      "localizedValue": "Update autoscale setting",
+      "value": "Microsoft.Insights/autoscalesettings/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/Microsoft.Insights/autoscalesettings/autoscale-csorejuela26",
+      "eventCategory": "Administrative",
+      "hierarchy": "ea649e50-27d2-4318-9cb9-2fcffe16fd41/c41aefb4-032e-4e2b-80a2-41e39d7c1425",
+      "message": "Microsoft.Insights/autoscalesettings/write"
+    },
+    "resourceGroup": "rg-csorejuela26",
+    "resourceGroupName": "rg-csorejuela26",
+    "resourceId": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/Microsoft.Insights/autoscalesettings/autoscale-csorejuela26",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Insights",
+      "value": "Microsoft.Insights"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Insights/autoScaleSettings",
+      "value": "Microsoft.Insights/autoScaleSettings"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2026-11-24T03:08:14Z",
+    "subscriptionId": "c41aefb4-032e-4e2b-80a2-41e39d7c1425",
+    "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Compute/virtualMachineScaleSets/write",
+      "scope": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26"
+    },
+    "caller": "e144fe36-07ff-4b61-b6fa-c4b0cb1e0753",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "claims": {
+      "aio": "AYQAe/8eAAAAcPp0cype26nNB/VBfGP1hON20CKasM0KkJ5YQc/T/YNDX5o0uKNzqpUmOnJDAXejVpLzcWVIN9jeSjFdJtch5fGt2LxrJuXnYABeWqMYwSELx7K4exVseh3s7UfM5HvlVKHTOZFRY4awuSNX8oNzmOlGUMRHrW4wfyHmXG3UMew=",
+      "appid": "11c174dc-1945-4a9a-a36b-c79a0f246b9b",
+      "appidacr": "2",
+      "aud": "https://management.azure.com/",
+      "exp": "1795574702",
+      "http://schemas.microsoft.com/identity/claims/identityprovider": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "e144fe36-07ff-4b61-b6fa-c4b0cb1e0753",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "e144fe36-07ff-4b61-b6fa-c4b0cb1e0753",
+      "iat": "1795488002",
+      "idtyp": "app",
+      "iss": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "nbf": "1795488002",
+      "rh": "1.ADQAUJ5k6tInGEOcuS_P_hb9QUZIf3kAutdPukPawfj2MBMAAAA0AA.",
+      "uti": "UyDTeF-VwkiqwnaMs9EeAA",
+      "ver": "1.0",
+      "wids": "0997a1d0-0d1d-4acb-b408-d5ca73121e90",
+      "xms_act_fct": "3 5",
+      "xms_aud_guid": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "xms_ftd": "YyASze8DwGeNwmP90E6NDOiDpes7X45nQ9YLqGCoe8wBY2FuYWRhY2VudHJhbC1kc21z",
+      "xms_idrel": "7 24",
+      "xms_rd": "0.AW8AkP8KBQgCEgE0EhQICRIQ0Y13Cjycv0ySkqJ5IlCAIRIUCAgSEEZIf3kAutdPukPawfj2MBMSFAgLEhDM5LWgKVgLlicgkjtB1jBjIiQIAxIgvib3kZIalR9ZNmkjjWCAgO2SUZTXRMLnO-lmpWVZIrE",
+      "xms_sub_fct": "5 3",
+      "xms_tcdt": "1378746733"
+    },
+    "correlationId": "ccf8fd71-6858-4a33-9814-a1a7bb2c6260",
+    "description": "",
+    "eventDataId": "60a95987-b9b5-4a8d-b6a4-602e9499ce6c",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2026-11-24T03:06:33.3114822Z",
+    "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26/events/60a95987-b9b5-4a8d-b6a4-602e9499ce6c/ticks/639310863933114822",
+    "level": "Informational",
+    "operationId": "60fcf903-50fd-4d76-8e0c-e85710c1aa01",
+    "operationName": {
+      "localizedValue": "Create or Update Virtual Machine Scale Set",
+      "value": "Microsoft.Compute/virtualMachineScaleSets/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26",
+      "eventCategory": "Administrative",
+      "hierarchy": "ea649e50-27d2-4318-9cb9-2fcffe16fd41/c41aefb4-032e-4e2b-80a2-41e39d7c1425",
+      "message": "Microsoft.Compute/virtualMachineScaleSets/write"
+    },
+    "resourceGroup": "rg-csorejuela26",
+    "resourceGroupName": "rg-csorejuela26",
+    "resourceId": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Compute",
+      "value": "Microsoft.Compute"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Compute/virtualMachineScaleSets",
+      "value": "Microsoft.Compute/virtualMachineScaleSets"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2026-11-24T03:07:59Z",
+    "subscriptionId": "c41aefb4-032e-4e2b-80a2-41e39d7c1425",
+    "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41"
+  },
+  {
+    "caller": "Microsoft.Insights/autoscaleSettings",
+    "category": {
+      "localizedValue": "Autoscale",
+      "value": "Autoscale"
+    },
+    "claims": {
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/spn": "Microsoft.Insights/autoscaleSettings"
+    },
+    "correlationId": "238b8dee-e212-4d49-8ae3-246449e7ba93",
+    "description": "The autoscale operation to scale resource '/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26' from 2 instances count to 3 instances count completed successfully.",
+    "eventDataId": "ca120575-2df6-bcd5-4a99-e7c06695ff66",
+    "eventName": {
+      "localizedValue": "GetOperationStatusResult",
+      "value": "GetOperationStatusResult"
+    },
+    "eventTimestamp": "2026-11-24T03:06:10.5161378Z",
+    "id": "/SUBSCRIPTIONS/C41AEFB4-032E-4E2B-80A2-41E39D7C1425/RESOURCEGROUPS/RG-CSOREJUELA26/PROVIDERS/MICROSOFT.COMPUTE/VIRTUALMACHINESCALESETS/VMSS-CSOREJUELA26/events/ca120575-2df6-bcd5-4a99-e7c06695ff66/ticks/639310863705161378",
+    "level": "Informational",
+    "operationId": "f34a9ebc-4cc1-42e0-872e-75cb8ed28c03",
+    "operationName": {
+      "localizedValue": "Autoscale scale up completed",
+      "value": "Microsoft.Insights/AutoscaleSettings/ScaleupResult/Action"
+    },
+    "properties": {
+      "NewInstancesCount": "3",
+      "OldInstancesCount": "2",
+      "eventName": "GetOperationStatusResult",
+      "operationId": "f34a9ebc-4cc1-42e0-872e-75cb8ed28c03"
+    },
+    "resourceGroup": "RG-CSOREJUELA26",
+    "resourceGroupName": "RG-CSOREJUELA26",
+    "resourceId": "/SUBSCRIPTIONS/C41AEFB4-032E-4E2B-80A2-41E39D7C1425/RESOURCEGROUPS/RG-CSOREJUELA26/PROVIDERS/MICROSOFT.COMPUTE/VIRTUALMACHINESCALESETS/VMSS-CSOREJUELA26",
+    "resourceProviderName": {
+      "localizedValue": "MICROSOFT.COMPUTE",
+      "value": "MICROSOFT.COMPUTE"
+    },
+    "resourceType": {
+      "localizedValue": "MICROSOFT.COMPUTE/virtualmachinescalesets",
+      "value": "MICROSOFT.COMPUTE/virtualmachinescalesets"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2026-11-24T03:06:10.5161378Z",
+    "subscriptionId": "C41AEFB4-032E-4E2B-80A2-41E39D7C1425",
+    "tenantId": ""
+  },
+  {
+    "caller": "Microsoft.Insights/autoscaleSettings",
+    "category": {
+      "localizedValue": "Autoscale",
+      "value": "Autoscale"
+    },
+    "claims": {
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/spn": "Microsoft.Insights/autoscaleSettings"
+    },
+    "correlationId": "238b8dee-e212-4d49-8ae3-246449e7ba93",
+    "description": "The autoscale engine attempting to scale resource '/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26' from 2 instances count to 3 instances count.",
+    "eventDataId": "28148094-4039-94e3-14a9-a0584f06c9ef",
+    "eventName": {
+      "localizedValue": "Autoscale a resource.",
+      "value": "AutoscaleAction"
+    },
+    "eventTimestamp": "2026-11-24T03:06:10.5161378Z",
+    "id": "/SUBSCRIPTIONS/C41AEFB4-032E-4E2B-80A2-41E39D7C1425/RESOURCEGROUPS/RG-CSOREJUELA26/PROVIDERS/MICROSOFT.INSIGHTS/AUTOSCALESETTINGS/AUTOSCALE-CSOREJUELA26/events/28148094-4039-94e3-14a9-a0584f06c9ef/ticks/639310863705161378",
+    "level": "Informational",
+    "operationId": "ed03ae76-b3dc-46f9-be8d-e935307ebd4b",
+    "operationName": {
+      "localizedValue": "Autoscale scale up initiated",
+      "value": "Microsoft.Insights/AutoscaleSettings/Scaleup/Action"
+    },
+    "properties": {
+      "ActiveAutoscaleProfile": "{\r\n  \"Name\": \"cpu\",\r\n  \"Capacity\": {\r\n    \"Minimum\": \"2\",\r\n    \"Maximum\": \"3\",\r\n    \"Default\": \"2\"\r\n  },\r\n  \"Rules\": [\r\n    {\r\n      \"MetricTrigger\": {\r\n        \"Name\": \"Percentage CPU\",\r\n        \"Namespace\": \"\",\r\n        \"Resource\": \"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26\",\r\n        \"ResourceLocation\": \"canadacentral\",\r\n        \"TimeGrain\": \"PT1M\",\r\n        \"Statistic\": \"Average\",\r\n        \"TimeWindow\": \"PT3M\",\r\n        \"TimeAggregation\": \"Average\",\r\n        \"Operator\": \"GreaterThan\",\r\n        \"Threshold\": 65.0,\r\n        \"Source\": \"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26\",\r\n        \"MetricType\": \"MDM\",\r\n        \"Dimensions\": [],\r\n        \"DividePerInstance\": false\r\n      },\r\n      \"ScaleAction\": {\r\n        \"Direction\": \"Increase\",\r\n        \"Type\": \"ChangeCount\",\r\n        \"Value\": \"1\",\r\n        \"Cooldown\": \"PT3M\"\r\n      }\r\n    },\r\n    {\r\n      \"MetricTrigger\": {\r\n        \"Name\": \"Percentage CPU\",\r\n        \"Namespace\": \"\",\r\n        \"Resource\": \"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26\",\r\n        \"ResourceLocation\": \"canadacentral\",\r\n        \"TimeGrain\": \"PT1M\",\r\n        \"Statistic\": \"Average\",\r\n        \"TimeWindow\": \"PT5M\",\r\n        \"TimeAggregation\": \"Average\",\r\n        \"Operator\": \"LessThan\",\r\n        \"Threshold\": 30.0,\r\n        \"Source\": \"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26\",\r\n        \"MetricType\": \"MDM\",\r\n        \"Dimensions\": [],\r\n        \"DividePerInstance\": false\r\n      },\r\n      \"ScaleAction\": {\r\n        \"Direction\": \"Decrease\",\r\n        \"Type\": \"ChangeCount\",\r\n        \"Value\": \"1\",\r\n        \"Cooldown\": \"PT5M\"\r\n      }\r\n    }\r\n  ]\r\n}",
+      "Description": "The autoscale engine attempting to scale resource '/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26' from 2 instances count to 3 instances count.",
+      "LastScaleActionTime": "Tue, 24 Nov 2026 03:06:09 GMT",
+      "NewInstancesCount": "3",
+      "OldInstancesCount": "2",
+      "ResourceName": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26",
+      "eventName": "AutoscaleAction",
+      "operationId": "ed03ae76-b3dc-46f9-be8d-e935307ebd4b"
+    },
+    "resourceGroup": "RG-CSOREJUELA26",
+    "resourceGroupName": "RG-CSOREJUELA26",
+    "resourceId": "/SUBSCRIPTIONS/C41AEFB4-032E-4E2B-80A2-41E39D7C1425/RESOURCEGROUPS/RG-CSOREJUELA26/PROVIDERS/MICROSOFT.INSIGHTS/AUTOSCALESETTINGS/AUTOSCALE-CSOREJUELA26",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Insights",
+      "value": "MICROSOFT.INSIGHTS"
+    },
+    "resourceType": {
+      "localizedValue": "MICROSOFT.INSIGHTS/autoscalesettings",
+      "value": "MICROSOFT.INSIGHTS/autoscalesettings"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2026-11-24T03:06:10.5161378Z",
+    "subscriptionId": "C41AEFB4-032E-4E2B-80A2-41E39D7C1425",
+    "tenantId": ""
+  },
+  {
+    "caller": "Microsoft.Insights/autoscaleSettings",
+    "category": {
+      "localizedValue": "Autoscale",
+      "value": "Autoscale"
+    },
+    "claims": {
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/spn": "Microsoft.Insights/autoscaleSettings"
+    },
+    "correlationId": "238b8dee-e212-4d49-8ae3-246449e7ba93",
+    "description": "The autoscale engine attempting to scale resource '/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26' from 2 instances count to 3 instances count.",
+    "eventDataId": "28148094-4039-94e3-14a9-a0584f06c9ef",
+    "eventName": {
+      "localizedValue": "Autoscale a resource.",
+      "value": "AutoscaleAction"
+    },
+    "eventTimestamp": "2026-11-24T03:06:10.5161378Z",
+    "id": "/SUBSCRIPTIONS/C41AEFB4-032E-4E2B-80A2-41E39D7C1425/RESOURCEGROUPS/RG-CSOREJUELA26/PROVIDERS/MICROSOFT.COMPUTE/VIRTUALMACHINESCALESETS/VMSS-CSOREJUELA26/events/28148094-4039-94e3-14a9-a0584f06c9ef/ticks/639310863705161378",
+    "level": "Informational",
+    "operationId": "ed03ae76-b3dc-46f9-be8d-e935307ebd4b",
+    "operationName": {
+      "localizedValue": "Autoscale scale up initiated",
+      "value": "Microsoft.Insights/AutoscaleSettings/Scaleup/Action"
+    },
+    "properties": {
+      "ActiveAutoscaleProfile": "{\r\n  \"Name\": \"cpu\",\r\n  \"Capacity\": {\r\n    \"Minimum\": \"2\",\r\n    \"Maximum\": \"3\",\r\n    \"Default\": \"2\"\r\n  },\r\n  \"Rules\": [\r\n    {\r\n      \"MetricTrigger\": {\r\n        \"Name\": \"Percentage CPU\",\r\n        \"Namespace\": \"\",\r\n        \"Resource\": \"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26\",\r\n        \"ResourceLocation\": \"canadacentral\",\r\n        \"TimeGrain\": \"PT1M\",\r\n        \"Statistic\": \"Average\",\r\n        \"TimeWindow\": \"PT3M\",\r\n        \"TimeAggregation\": \"Average\",\r\n        \"Operator\": \"GreaterThan\",\r\n        \"Threshold\": 65.0,\r\n        \"Source\": \"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26\",\r\n        \"MetricType\": \"MDM\",\r\n        \"Dimensions\": [],\r\n        \"DividePerInstance\": false\r\n      },\r\n      \"ScaleAction\": {\r\n        \"Direction\": \"Increase\",\r\n        \"Type\": \"ChangeCount\",\r\n        \"Value\": \"1\",\r\n        \"Cooldown\": \"PT3M\"\r\n      }\r\n    },\r\n    {\r\n      \"MetricTrigger\": {\r\n        \"Name\": \"Percentage CPU\",\r\n        \"Namespace\": \"\",\r\n        \"Resource\": \"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26\",\r\n        \"ResourceLocation\": \"canadacentral\",\r\n        \"TimeGrain\": \"PT1M\",\r\n        \"Statistic\": \"Average\",\r\n        \"TimeWindow\": \"PT5M\",\r\n        \"TimeAggregation\": \"Average\",\r\n        \"Operator\": \"LessThan\",\r\n        \"Threshold\": 30.0,\r\n        \"Source\": \"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26\",\r\n        \"MetricType\": \"MDM\",\r\n        \"Dimensions\": [],\r\n        \"DividePerInstance\": false\r\n      },\r\n      \"ScaleAction\": {\r\n        \"Direction\": \"Decrease\",\r\n        \"Type\": \"ChangeCount\",\r\n        \"Value\": \"1\",\r\n        \"Cooldown\": \"PT5M\"\r\n      }\r\n    }\r\n  ]\r\n}",
+      "Description": "The autoscale engine attempting to scale resource '/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26' from 2 instances count to 3 instances count.",
+      "LastScaleActionTime": "Tue, 24 Nov 2026 03:06:09 GMT",
+      "NewInstancesCount": "3",
+      "OldInstancesCount": "2",
+      "ResourceName": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26",
+      "eventName": "AutoscaleAction",
+      "operationId": "ed03ae76-b3dc-46f9-be8d-e935307ebd4b"
+    },
+    "resourceGroup": "RG-CSOREJUELA26",
+    "resourceGroupName": "RG-CSOREJUELA26",
+    "resourceId": "/SUBSCRIPTIONS/C41AEFB4-032E-4E2B-80A2-41E39D7C1425/RESOURCEGROUPS/RG-CSOREJUELA26/PROVIDERS/MICROSOFT.COMPUTE/VIRTUALMACHINESCALESETS/VMSS-CSOREJUELA26",
+    "resourceProviderName": {
+      "localizedValue": "MICROSOFT.COMPUTE",
+      "value": "MICROSOFT.COMPUTE"
+    },
+    "resourceType": {
+      "localizedValue": "MICROSOFT.COMPUTE/virtualmachinescalesets",
+      "value": "MICROSOFT.COMPUTE/virtualmachinescalesets"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2026-11-24T03:06:10.5161378Z",
+    "subscriptionId": "C41AEFB4-032E-4E2B-80A2-41E39D7C1425",
+    "tenantId": ""
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Compute/virtualMachineScaleSets/write",
+      "scope": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26"
+    },
+    "caller": "e144fe36-07ff-4b61-b6fa-c4b0cb1e0753",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "claims": {
+      "aio": "AYQAe/8eAAAAcPp0cype26nNB/VBfGP1hON20CKasM0KkJ5YQc/T/YNDX5o0uKNzqpUmOnJDAXejVpLzcWVIN9jeSjFdJtch5fGt2LxrJuXnYABeWqMYwSELx7K4exVseh3s7UfM5HvlVKHTOZFRY4awuSNX8oNzmOlGUMRHrW4wfyHmXG3UMew=",
+      "appid": "11c174dc-1945-4a9a-a36b-c79a0f246b9b",
+      "appidacr": "2",
+      "aud": "https://management.azure.com/",
+      "exp": "1795574702",
+      "http://schemas.microsoft.com/identity/claims/identityprovider": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "e144fe36-07ff-4b61-b6fa-c4b0cb1e0753",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "e144fe36-07ff-4b61-b6fa-c4b0cb1e0753",
+      "iat": "1795488002",
+      "idtyp": "app",
+      "iss": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "nbf": "1795488002",
+      "rh": "1.ADQAUJ5k6tInGEOcuS_P_hb9QUZIf3kAutdPukPawfj2MBMAAAA0AA.",
+      "uti": "UyDTeF-VwkiqwnaMs9EeAA",
+      "ver": "1.0",
+      "wids": "0997a1d0-0d1d-4acb-b408-d5ca73121e90",
+      "xms_act_fct": "3 5",
+      "xms_aud_guid": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "xms_ftd": "YyASze8DwGeNwmP90E6NDOiDpes7X45nQ9YLqGCoe8wBY2FuYWRhY2VudHJhbC1kc21z",
+      "xms_idrel": "7 24",
+      "xms_rd": "0.AW8AkP8KBQgCEgE0EhQICRIQ0Y13Cjycv0ySkqJ5IlCAIRIUCAgSEEZIf3kAutdPukPawfj2MBMSFAgLEhDM5LWgKVgLlicgkjtB1jBjIiQIAxIgvib3kZIalR9ZNmkjjWCAgO2SUZTXRMLnO-lmpWVZIrE",
+      "xms_sub_fct": "5 3",
+      "xms_tcdt": "1378746733"
+    },
+    "correlationId": "ccf8fd71-6858-4a33-9814-a1a7bb2c6260",
+    "description": "",
+    "eventDataId": "894ead8a-9ab6-4d30-92f6-4e2f3476a7d7",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2026-11-24T03:06:09.7626373Z",
+    "httpRequest": {
+      "clientIpAddress": "4.248.209.160",
+      "clientRequestId": "",
+      "method": "PATCH",
+      "uri": "https://management.azure.com/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26?api-version=2021-11-01"
+    },
+    "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26/events/894ead8a-9ab6-4d30-92f6-4e2f3476a7d7/ticks/639310863697626373",
+    "level": "Informational",
+    "operationId": "ccf8fd71-6858-4a33-9814-a1a7bb2c6260",
+    "operationName": {
+      "localizedValue": "Create or Update Virtual Machine Scale Set",
+      "value": "Microsoft.Compute/virtualMachineScaleSets/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26",
+      "eventCategory": "Administrative",
+      "hierarchy": "ea649e50-27d2-4318-9cb9-2fcffe16fd41/c41aefb4-032e-4e2b-80a2-41e39d7c1425",
+      "message": "Microsoft.Compute/virtualMachineScaleSets/write",
+      "responseBody": "{\"name\":\"vmss-csorejuela26\",\"id\":\"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26\",\"type\":\"Microsoft.Compute/virtualMachineScaleSets\",\"location\":\"canadacentral\",\"tags\":{},\"identity\":{\"type\":\"SystemAssigned\",\"principalId\":\"5260149d-3be1-4fa4-9c56-0c6a749812df\",\"tenantId\":\"ea649e50-27d2-4318-9cb9-2fcffe16fd41\"},\"sku\":{\"name\":\"Standard_B2pls_v2\",\"tier\":\"Standard\",\"capacity\":3},\"properties\":{\"singlePlacementGroup\":true,\"orchestrationMode\":\"Uniform\",\"upgradePolicy\":{\"mode\":\"Automatic\"},\"virtualMachineProfile\":{\"osProfile\":{\"computerNamePrefix\":\"vmss-csorejuela26\",\"linuxConfiguration\":{\"disablePasswordAuthentication\":true,\"ssh\":{\"publicKeys\":[{\"path\":\"/home/azureuser/.ssh/authorized_keys\",\"keyData\":\"ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIch7MlmlblcmeoNnWixApWhCZPv5a1UeMqtYK6wPMcS caribeshop-lab\"}]},\"provisionVMAgent\":true,\"enableVMAgentPlatformUpdates\":true},\"secrets\":[],\"allowExtensionOperations\":true,\"requireGuestProvisionSignal\":true,\"adminUsername\":\"azureuser\"},\"storageProfile\":{\"osDisk\":{\"osType\":\"Linux\",\"createOption\":\"FromImage\",\"caching\":\"ReadWrite\",\"writeAcceleratorEnabled\":false,\"managedDisk\":{\"storageAccountType\":\"Standard_LRS\"},\"diskSizeGB\":30},\"imageReference\":{\"publisher\":\"Canonical\",\"offer\":\"ubuntu-24_04-lts\",\"sku\":\"server-arm64\",\"version\":\"24.04.202611170\"}},\"networkProfile\":{\"healthProbe\":{\"id\":\"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Network/loadBalancers/lb-csorejuela26/probes/health\"},\"networkInterfaceConfigurations\":[{\"name\":\"app\",\"properties\":{\"primary\":true,\"enableAcceleratedNetworking\":false,\"disableTcpStateTracking\":false,\"dnsSettings\":{\"dnsServers\":[]},\"enableIPForwarding\":false,\"ipConfigurations\":[{\"name\":\"private\",\"properties\":{\"primary\":true,\"subnet\":{\"id\":\"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Network/virtualNetworks/vnet-csorejuela26/subnets/snet-app\"},\"privateIPAddressVersion\":\"IPv4\",\"loadBalancerBackendAddressPools\":[{\"id\":\"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Network/loadBalancers/lb-csorejuela26/backendAddressPools/app\"}]}}]}}]},\"diagnosticsProfile\":{\"bootDiagnostics\":{\"enabled\":true}},\"extensionProfile\":{\"extensions\":[],\"extensionsTimeBudget\":\"PT1H30M\"},\"priority\":\"Regular\",\"securityProfile\":{\"encryptionAtHost\":true}},\"provisioningState\":\"Updating\",\"overprovision\":false,\"doNotRunExtensionsOnOverprovisionedVMs\":false,\"uniqueId\":\"ebca8ae9-09cd-4781-ab48-6c860c47560a\",\"zoneBalance\":true,\"platformFaultDomainCount\":5,\"automaticRepairsPolicy\":{\"enabled\":true,\"gracePeriod\":\"PT10M\",\"repairAction\":\"Replace\"},\"timeCreated\":\"2026-11-24T02:42:09.3831403+00:00\"},\"zones\":[\"3\",\"1\"]}",
+      "statusCode": "OK"
+    },
+    "resourceGroup": "rg-csorejuela26",
+    "resourceGroupName": "rg-csorejuela26",
+    "resourceId": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Compute",
+      "value": "Microsoft.Compute"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Compute/virtualMachineScaleSets",
+      "value": "Microsoft.Compute/virtualMachineScaleSets"
+    },
+    "status": {
+      "localizedValue": "Accepted",
+      "value": "Accepted"
+    },
+    "subStatus": {
+      "localizedValue": "OK (HTTP Status Code: 200)",
+      "value": "OK"
+    },
+    "submissionTimestamp": "2026-11-24T03:08:26Z",
+    "subscriptionId": "c41aefb4-032e-4e2b-80a2-41e39d7c1425",
+    "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Compute/virtualMachineScaleSets/write",
+      "scope": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26"
+    },
+    "caller": "e144fe36-07ff-4b61-b6fa-c4b0cb1e0753",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "claims": {
+      "aio": "AYQAe/8eAAAAcPp0cype26nNB/VBfGP1hON20CKasM0KkJ5YQc/T/YNDX5o0uKNzqpUmOnJDAXejVpLzcWVIN9jeSjFdJtch5fGt2LxrJuXnYABeWqMYwSELx7K4exVseh3s7UfM5HvlVKHTOZFRY4awuSNX8oNzmOlGUMRHrW4wfyHmXG3UMew=",
+      "appid": "11c174dc-1945-4a9a-a36b-c79a0f246b9b",
+      "appidacr": "2",
+      "aud": "https://management.azure.com/",
+      "exp": "1795574702",
+      "http://schemas.microsoft.com/identity/claims/identityprovider": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "e144fe36-07ff-4b61-b6fa-c4b0cb1e0753",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "e144fe36-07ff-4b61-b6fa-c4b0cb1e0753",
+      "iat": "1795488002",
+      "idtyp": "app",
+      "iss": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "nbf": "1795488002",
+      "rh": "1.ADQAUJ5k6tInGEOcuS_P_hb9QUZIf3kAutdPukPawfj2MBMAAAA0AA.",
+      "uti": "UyDTeF-VwkiqwnaMs9EeAA",
+      "ver": "1.0",
+      "wids": "0997a1d0-0d1d-4acb-b408-d5ca73121e90",
+      "xms_act_fct": "3 5",
+      "xms_aud_guid": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "xms_ftd": "YyASze8DwGeNwmP90E6NDOiDpes7X45nQ9YLqGCoe8wBY2FuYWRhY2VudHJhbC1kc21z",
+      "xms_idrel": "7 24",
+      "xms_rd": "0.AW8AkP8KBQgCEgE0EhQICRIQ0Y13Cjycv0ySkqJ5IlCAIRIUCAgSEEZIf3kAutdPukPawfj2MBMSFAgLEhDM5LWgKVgLlicgkjtB1jBjIiQIAxIgvib3kZIalR9ZNmkjjWCAgO2SUZTXRMLnO-lmpWVZIrE",
+      "xms_sub_fct": "5 3",
+      "xms_tcdt": "1378746733"
+    },
+    "correlationId": "ccf8fd71-6858-4a33-9814-a1a7bb2c6260",
+    "description": "",
+    "eventDataId": "e8e1e7ef-87be-439a-b4a7-27bf3cae2b0c",
+    "eventName": {
+      "localizedValue": "Begin request",
+      "value": "BeginRequest"
+    },
+    "eventTimestamp": "2026-11-24T03:06:09.372011Z",
+    "httpRequest": {
+      "clientIpAddress": "4.248.209.160",
+      "clientRequestId": "",
+      "method": "PATCH",
+      "uri": "https://management.azure.com/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26?api-version=2021-11-01"
+    },
+    "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26/events/e8e1e7ef-87be-439a-b4a7-27bf3cae2b0c/ticks/639310863693720110",
+    "level": "Informational",
+    "operationId": "ccf8fd71-6858-4a33-9814-a1a7bb2c6260",
+    "operationName": {
+      "localizedValue": "Create or Update Virtual Machine Scale Set",
+      "value": "Microsoft.Compute/virtualMachineScaleSets/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26",
+      "eventCategory": "Administrative",
+      "hierarchy": "ea649e50-27d2-4318-9cb9-2fcffe16fd41/c41aefb4-032e-4e2b-80a2-41e39d7c1425",
+      "message": "Microsoft.Compute/virtualMachineScaleSets/write"
+    },
+    "resourceGroup": "rg-csorejuela26",
+    "resourceGroupName": "rg-csorejuela26",
+    "resourceId": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Compute",
+      "value": "Microsoft.Compute"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Compute/virtualMachineScaleSets",
+      "value": "Microsoft.Compute/virtualMachineScaleSets"
+    },
+    "status": {
+      "localizedValue": "Started",
+      "value": "Started"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2026-11-24T03:08:26Z",
+    "subscriptionId": "c41aefb4-032e-4e2b-80a2-41e39d7c1425",
+    "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Insights/metricAlerts/write",
+      "scope": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Insights/metricAlerts/unhealthy-csorejuela26"
+    },
+    "caller": "sorejuela@utb.edu.co",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "claims": {
+      "acrs": "p1,urn:user:registersecurityinfo",
+      "aio": "AcQAO/8eAAAATjvuAzxcO5h/bdTiYG3d/jdrhrWk7i+nVSCtW0InCc6IOGq2geLOBDzXbMsP96nfZMufYx/e+Jk9apLeALrqkUhvJHIPXskcM50pKTGWULaGhjkBHFJKQXak5WohqnBobb1W22+wL5y5dohpEtrP28s1ICIxxjqvPexkYQZUOUQVpPZpYrLli8XAjmJ19NbY4R89rCyimrXljobWKV8vB7kF6AX8gx/4Jern0jkrC+4xMqw7NvbEGhbahJBcjiCc",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.azure.com",
+      "correlationid": "c79ab5be-5f19-dd34-f12b-61cb90c64e33",
+      "exp": "1795503874",
+      "groups": "114d2040-4b5e-4117-bd3f-5a6260183076,f4e95858-afed-4f55-ac2f-6ee61de7a689,190fe8fa-6475-43ce-9e47-405f89a9fb04,4d22e819-0f97-4e12-bf2b-53d20fd5626c,e3a64720-b438-42b5-8b7e-2df48b669c7d,5c02a5aa-e698-422c-90cc-f9029cc11a55,5d7fa823-1402-4809-afdb-16f9472a578b,13961815-dbfd-4a17-a1cc-13be691d407a,2eeac305-d776-4d72-a2e7-d876ea69826b,70cb0edc-b752-4938-bc01-4e2f2421933c,b5a37f74-fb1b-448b-8063-0b0a8a05e5c3,a9b15e0c-40e9-4783-b465-d788711442c5,0b87f088-f184-4307-878b-c3116841d4f2,172fefd9-d28b-4d8d-806c-584af47a337f,2b690ffc-a6b4-4a20-b668-bbda0bb49be4,28cdfe26-ce28-4931-830e-8bf3d8c71556,708140c6-3db8-4fbe-8b5c-ab960a857ac3,a1b40582-07f4-47f0-b2b8-33854087c624,ca81f41c-90b2-4183-a5f0-c24cc3d665e5,85b7058a-9283-439a-a1fc-79c36e601bc5",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "b812070b-9f0a-49b6-930c-ffa76d2e22b0",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Santiago Andres",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "sorejuela@utb.edu.co",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "AmSB69pl9RqUWgJz5T3VJt6vTwkFsePYYtAJ3UpLWv8",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Orejuela Cueter",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "sorejuela@utb.edu.co",
+      "iat": "1795487118",
+      "idtyp": "user",
+      "ipaddr": "179.33.207.190",
+      "iss": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "name": "Santiago Andres Orejuela Cueter",
+      "nbf": "1795487118",
+      "onprem_sid": "S-1-5-21-1875160959-3801935606-161467275-25872",
+      "puid": "100320019566D8E5",
+      "rh": "1.ATQAUJ5k6tInGEOcuS_P_hb9QUZIf3kAutdPukPawfj2MBMAAM40AA.",
+      "sid": "00a9192a-65c6-10ff-5b56-29157b66a536",
+      "uti": "bM3FXD8bsECK4bUpKwUjAA",
+      "ver": "1.0",
+      "wids": "b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_act_fct": "3 5",
+      "xms_aud_guid": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "xms_ftd": "JL1dDZX-mhIDIU7DBVXlxRMn4e0ISjj80jZDKAT_NGkBdXNzb3V0aC1kc21z",
+      "xms_idrel": "1 28",
+      "xms_sub_fct": "20 3",
+      "xms_tcdt": "1378746733"
+    },
+    "correlationId": "c79ab5be-5f19-dd34-f12b-61cb90c64e33",
+    "description": "",
+    "eventDataId": "6469cc39-80cb-4147-8056-d1fe03d01ce3",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2026-11-24T03:04:35.835157Z",
+    "httpRequest": {
+      "clientIpAddress": "179.33.207.190",
+      "clientRequestId": "",
+      "method": "PUT",
+      "uri": "https://management.azure.com/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Insights/metricAlerts/unhealthy-csorejuela26?api-version=2018-03-01"
+    },
+    "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Insights/metricAlerts/unhealthy-csorejuela26/events/6469cc39-80cb-4147-8056-d1fe03d01ce3/ticks/639310862758351570",
+    "level": "Informational",
+    "operationId": "1349bfd6-ab03-4fc0-b39c-c26d55862198",
+    "operationName": {
+      "localizedValue": "Create or update metric alert",
+      "value": "Microsoft.Insights/metricAlerts/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Insights/metricAlerts/unhealthy-csorejuela26",
+      "eventCategory": "Administrative",
+      "hierarchy": "ea649e50-27d2-4318-9cb9-2fcffe16fd41/c41aefb4-032e-4e2b-80a2-41e39d7c1425",
+      "message": "Microsoft.Insights/metricAlerts/write",
+      "statusCode": "OK"
+    },
+    "resourceGroup": "rg-csorejuela26",
+    "resourceGroupName": "rg-csorejuela26",
+    "resourceId": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Insights/metricAlerts/unhealthy-csorejuela26",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Insights",
+      "value": "Microsoft.Insights"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Insights/metricAlerts",
+      "value": "Microsoft.Insights/metricAlerts"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "OK (HTTP Status Code: 200)",
+      "value": "OK"
+    },
+    "submissionTimestamp": "2026-11-24T03:05:55Z",
+    "subscriptionId": "c41aefb4-032e-4e2b-80a2-41e39d7c1425",
+    "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Insights/metricAlerts/write",
+      "scope": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Insights/metricAlerts/unhealthy-csorejuela26"
+    },
+    "caller": "sorejuela@utb.edu.co",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "claims": {
+      "acrs": "p1,urn:user:registersecurityinfo",
+      "aio": "AcQAO/8eAAAATjvuAzxcO5h/bdTiYG3d/jdrhrWk7i+nVSCtW0InCc6IOGq2geLOBDzXbMsP96nfZMufYx/e+Jk9apLeALrqkUhvJHIPXskcM50pKTGWULaGhjkBHFJKQXak5WohqnBobb1W22+wL5y5dohpEtrP28s1ICIxxjqvPexkYQZUOUQVpPZpYrLli8XAjmJ19NbY4R89rCyimrXljobWKV8vB7kF6AX8gx/4Jern0jkrC+4xMqw7NvbEGhbahJBcjiCc",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.azure.com",
+      "exp": "1795491197",
+      "groups": "114d2040-4b5e-4117-bd3f-5a6260183076,f4e95858-afed-4f55-ac2f-6ee61de7a689,190fe8fa-6475-43ce-9e47-405f89a9fb04,4d22e819-0f97-4e12-bf2b-53d20fd5626c,e3a64720-b438-42b5-8b7e-2df48b669c7d,5c02a5aa-e698-422c-90cc-f9029cc11a55,5d7fa823-1402-4809-afdb-16f9472a578b,13961815-dbfd-4a17-a1cc-13be691d407a,2eeac305-d776-4d72-a2e7-d876ea69826b,70cb0edc-b752-4938-bc01-4e2f2421933c,b5a37f74-fb1b-448b-8063-0b0a8a05e5c3,a9b15e0c-40e9-4783-b465-d788711442c5,0b87f088-f184-4307-878b-c3116841d4f2,172fefd9-d28b-4d8d-806c-584af47a337f,2b690ffc-a6b4-4a20-b668-bbda0bb49be4,28cdfe26-ce28-4931-830e-8bf3d8c71556,708140c6-3db8-4fbe-8b5c-ab960a857ac3,a1b40582-07f4-47f0-b2b8-33854087c624,ca81f41c-90b2-4183-a5f0-c24cc3d665e5,85b7058a-9283-439a-a1fc-79c36e601bc5",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "b812070b-9f0a-49b6-930c-ffa76d2e22b0",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Santiago Andres",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "sorejuela@utb.edu.co",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "AmSB69pl9RqUWgJz5T3VJt6vTwkFsePYYtAJ3UpLWv8",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Orejuela Cueter",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "sorejuela@utb.edu.co",
+      "iat": "1795487118",
+      "idtyp": "user",
+      "ipaddr": "179.33.207.190",
+      "iss": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "name": "Santiago Andres Orejuela Cueter",
+      "nbf": "1795487118",
+      "onprem_sid": "S-1-5-21-1875160959-3801935606-161467275-25872",
+      "puid": "100320019566D8E5",
+      "rh": "1.ATQAUJ5k6tInGEOcuS_P_hb9QUZIf3kAutdPukPawfj2MBMAAM40AA.",
+      "sid": "00a9192a-65c6-10ff-5b56-29157b66a536",
+      "uti": "bM3FXD8bsECK4bUpKwUjAA",
+      "ver": "1.0",
+      "wids": "b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_act_fct": "3 5",
+      "xms_aud_guid": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "xms_ftd": "JL1dDZX-mhIDIU7DBVXlxRMn4e0ISjj80jZDKAT_NGkBdXNzb3V0aC1kc21z",
+      "xms_idrel": "1 28",
+      "xms_sub_fct": "20 3",
+      "xms_tcdt": "1378746733"
+    },
+    "correlationId": "c79ab5be-5f19-dd34-f12b-61cb90c64e33",
+    "description": "",
+    "eventDataId": "0992fb98-892a-41f2-8e93-9f80d92860d1",
+    "eventName": {
+      "localizedValue": "Begin request",
+      "value": "BeginRequest"
+    },
+    "eventTimestamp": "2026-11-24T03:04:34.7882675Z",
+    "httpRequest": {
+      "clientIpAddress": "179.33.207.190",
+      "clientRequestId": "",
+      "method": "PUT",
+      "uri": "https://management.azure.com/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Insights/metricAlerts/unhealthy-csorejuela26?api-version=2018-03-01"
+    },
+    "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Insights/metricAlerts/unhealthy-csorejuela26/events/0992fb98-892a-41f2-8e93-9f80d92860d1/ticks/639310862747882675",
+    "level": "Informational",
+    "operationId": "1349bfd6-ab03-4fc0-b39c-c26d55862198",
+    "operationName": {
+      "localizedValue": "Create or update metric alert",
+      "value": "Microsoft.Insights/metricAlerts/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Insights/metricAlerts/unhealthy-csorejuela26",
+      "eventCategory": "Administrative",
+      "hierarchy": "ea649e50-27d2-4318-9cb9-2fcffe16fd41/c41aefb4-032e-4e2b-80a2-41e39d7c1425",
+      "message": "Microsoft.Insights/metricAlerts/write",
+      "requestbody": "{\"location\":\"global\",\"properties\":{\"actions\":[{\"actionGroupId\":\"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Insights/actionGroups/alerts-csorejuela26\",\"webHookProperties\":{}}],\"autoMitigate\":true,\"criteria\":{\"allOf\":[{\"criterionType\":\"StaticThresholdCriterion\",\"dimensions\":[],\"metricName\":\"DipAvailability\",\"metricNamespace\":\"Microsoft.Network/loadBalancers\",\"name\":\"Metric1\",\"operator\":\"LessThan\",\"skipMetricValidation\":false,\"threshold\":100,\"timeAggregation\":\"Average\"}],\"odata.type\":\"Microsoft.Azure.Monitor.MultipleResourceMultipleMetricCriteria\"},\"description\":\"Al menos una sonda del balanceador está fallando.\",\"enabled\":true,\"evaluationFrequency\":\"PT1M\",\"scopes\":[\"/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Network/loadBalancers/lb-csorejuela26\"],\"severity\":2,\"targetResourceRegion\":\"\",\"targetResourceType\":\"\",\"windowSize\":\"PT1M\"},\"tags\":{}}"
+    },
+    "resourceGroup": "rg-csorejuela26",
+    "resourceGroupName": "rg-csorejuela26",
+    "resourceId": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Insights/metricAlerts/unhealthy-csorejuela26",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Insights",
+      "value": "Microsoft.Insights"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Insights/metricAlerts",
+      "value": "Microsoft.Insights/metricAlerts"
+    },
+    "status": {
+      "localizedValue": "Started",
+      "value": "Started"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2026-11-24T03:05:55Z",
+    "subscriptionId": "c41aefb4-032e-4e2b-80a2-41e39d7c1425",
+    "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.OperationalInsights/workspaces/sharedKeys/action",
+      "scope": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.OperationalInsights/workspaces/logs-csorejuela26"
+    },
+    "caller": "sorejuela@utb.edu.co",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "claims": {
+      "acrs": "p1,urn:user:registersecurityinfo",
+      "aio": "AcQAO/8eAAAATjvuAzxcO5h/bdTiYG3d/jdrhrWk7i+nVSCtW0InCc6IOGq2geLOBDzXbMsP96nfZMufYx/e+Jk9apLeALrqkUhvJHIPXskcM50pKTGWULaGhjkBHFJKQXak5WohqnBobb1W22+wL5y5dohpEtrP28s1ICIxxjqvPexkYQZUOUQVpPZpYrLli8XAjmJ19NbY4R89rCyimrXljobWKV8vB7kF6AX8gx/4Jern0jkrC+4xMqw7NvbEGhbahJBcjiCc",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.azure.com",
+      "exp": "1795491197",
+      "groups": "114d2040-4b5e-4117-bd3f-5a6260183076,f4e95858-afed-4f55-ac2f-6ee61de7a689,190fe8fa-6475-43ce-9e47-405f89a9fb04,4d22e819-0f97-4e12-bf2b-53d20fd5626c,e3a64720-b438-42b5-8b7e-2df48b669c7d,5c02a5aa-e698-422c-90cc-f9029cc11a55,5d7fa823-1402-4809-afdb-16f9472a578b,13961815-dbfd-4a17-a1cc-13be691d407a,2eeac305-d776-4d72-a2e7-d876ea69826b,70cb0edc-b752-4938-bc01-4e2f2421933c,b5a37f74-fb1b-448b-8063-0b0a8a05e5c3,a9b15e0c-40e9-4783-b465-d788711442c5,0b87f088-f184-4307-878b-c3116841d4f2,172fefd9-d28b-4d8d-806c-584af47a337f,2b690ffc-a6b4-4a20-b668-bbda0bb49be4,28cdfe26-ce28-4931-830e-8bf3d8c71556,708140c6-3db8-4fbe-8b5c-ab960a857ac3,a1b40582-07f4-47f0-b2b8-33854087c624,ca81f41c-90b2-4183-a5f0-c24cc3d665e5,85b7058a-9283-439a-a1fc-79c36e601bc5",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "b812070b-9f0a-49b6-930c-ffa76d2e22b0",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Santiago Andres",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "sorejuela@utb.edu.co",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "AmSB69pl9RqUWgJz5T3VJt6vTwkFsePYYtAJ3UpLWv8",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Orejuela Cueter",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "sorejuela@utb.edu.co",
+      "iat": "1795487118",
+      "idtyp": "user",
+      "ipaddr": "179.33.207.190",
+      "iss": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "name": "Santiago Andres Orejuela Cueter",
+      "nbf": "1795487118",
+      "onprem_sid": "S-1-5-21-1875160959-3801935606-161467275-25872",
+      "puid": "100320019566D8E5",
+      "rh": "1.ATQAUJ5k6tInGEOcuS_P_hb9QUZIf3kAutdPukPawfj2MBMAAM40AA.",
+      "sid": "00a9192a-65c6-10ff-5b56-29157b66a536",
+      "uti": "bM3FXD8bsECK4bUpKwUjAA",
+      "ver": "1.0",
+      "wids": "b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_act_fct": "3 5",
+      "xms_aud_guid": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "xms_ftd": "JL1dDZX-mhIDIU7DBVXlxRMn4e0ISjj80jZDKAT_NGkBdXNzb3V0aC1kc21z",
+      "xms_idrel": "1 28",
+      "xms_sub_fct": "20 3",
+      "xms_tcdt": "1378746733"
+    },
+    "correlationId": "110cd2ff-bd4c-3573-4fe1-4df68034ac2a",
+    "description": "",
+    "eventDataId": "fe1d3093-fcc6-4ef3-bc53-93e90e190915",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2026-11-24T03:03:34.7836234Z",
+    "httpRequest": {
+      "clientIpAddress": "179.33.207.190",
+      "clientRequestId": "",
+      "method": "POST",
+      "uri": "https://management.azure.com/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.OperationalInsights/workspaces/logs-csorejuela26/sharedKeys?api-version=2020-08-01"
+    },
+    "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.OperationalInsights/workspaces/logs-csorejuela26/events/fe1d3093-fcc6-4ef3-bc53-93e90e190915/ticks/639310862147836234",
+    "level": "Informational",
+    "operationId": "7f1913db-8c27-47b6-bd9d-ce38217dc949",
+    "operationName": {
+      "localizedValue": "List Workspace Shared Keys",
+      "value": "Microsoft.OperationalInsights/workspaces/sharedKeys/action"
+    },
+    "properties": {
+      "entity": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.OperationalInsights/workspaces/logs-csorejuela26",
+      "eventCategory": "Administrative",
+      "hierarchy": "ea649e50-27d2-4318-9cb9-2fcffe16fd41/c41aefb4-032e-4e2b-80a2-41e39d7c1425",
+      "message": "Microsoft.OperationalInsights/workspaces/sharedKeys/action",
+      "statusCode": "OK"
+    },
+    "resourceGroup": "rg-csorejuela26",
+    "resourceGroupName": "rg-csorejuela26",
+    "resourceId": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.OperationalInsights/workspaces/logs-csorejuela26",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.OperationalInsights",
+      "value": "Microsoft.OperationalInsights"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.OperationalInsights/workspaces",
+      "value": "Microsoft.OperationalInsights/workspaces"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "OK (HTTP Status Code: 200)",
+      "value": "OK"
+    },
+    "submissionTimestamp": "2026-11-24T03:05:30Z",
+    "subscriptionId": "c41aefb4-032e-4e2b-80a2-41e39d7c1425",
+    "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.OperationalInsights/workspaces/sharedKeys/action",
+      "scope": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.OperationalInsights/workspaces/logs-csorejuela26"
+    },
+    "caller": "sorejuela@utb.edu.co",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "claims": {
+      "acrs": "p1,urn:user:registersecurityinfo",
+      "aio": "AcQAO/8eAAAATjvuAzxcO5h/bdTiYG3d/jdrhrWk7i+nVSCtW0InCc6IOGq2geLOBDzXbMsP96nfZMufYx/e+Jk9apLeALrqkUhvJHIPXskcM50pKTGWULaGhjkBHFJKQXak5WohqnBobb1W22+wL5y5dohpEtrP28s1ICIxxjqvPexkYQZUOUQVpPZpYrLli8XAjmJ19NbY4R89rCyimrXljobWKV8vB7kF6AX8gx/4Jern0jkrC+4xMqw7NvbEGhbahJBcjiCc",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.azure.com",
+      "exp": "1795491197",
+      "groups": "114d2040-4b5e-4117-bd3f-5a6260183076,f4e95858-afed-4f55-ac2f-6ee61de7a689,190fe8fa-6475-43ce-9e47-405f89a9fb04,4d22e819-0f97-4e12-bf2b-53d20fd5626c,e3a64720-b438-42b5-8b7e-2df48b669c7d,5c02a5aa-e698-422c-90cc-f9029cc11a55,5d7fa823-1402-4809-afdb-16f9472a578b,13961815-dbfd-4a17-a1cc-13be691d407a,2eeac305-d776-4d72-a2e7-d876ea69826b,70cb0edc-b752-4938-bc01-4e2f2421933c,b5a37f74-fb1b-448b-8063-0b0a8a05e5c3,a9b15e0c-40e9-4783-b465-d788711442c5,0b87f088-f184-4307-878b-c3116841d4f2,172fefd9-d28b-4d8d-806c-584af47a337f,2b690ffc-a6b4-4a20-b668-bbda0bb49be4,28cdfe26-ce28-4931-830e-8bf3d8c71556,708140c6-3db8-4fbe-8b5c-ab960a857ac3,a1b40582-07f4-47f0-b2b8-33854087c624,ca81f41c-90b2-4183-a5f0-c24cc3d665e5,85b7058a-9283-439a-a1fc-79c36e601bc5",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "b812070b-9f0a-49b6-930c-ffa76d2e22b0",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Santiago Andres",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "sorejuela@utb.edu.co",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "AmSB69pl9RqUWgJz5T3VJt6vTwkFsePYYtAJ3UpLWv8",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Orejuela Cueter",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "sorejuela@utb.edu.co",
+      "iat": "1795487118",
+      "idtyp": "user",
+      "ipaddr": "179.33.207.190",
+      "iss": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "name": "Santiago Andres Orejuela Cueter",
+      "nbf": "1795487118",
+      "onprem_sid": "S-1-5-21-1875160959-3801935606-161467275-25872",
+      "puid": "100320019566D8E5",
+      "rh": "1.ATQAUJ5k6tInGEOcuS_P_hb9QUZIf3kAutdPukPawfj2MBMAAM40AA.",
+      "sid": "00a9192a-65c6-10ff-5b56-29157b66a536",
+      "uti": "bM3FXD8bsECK4bUpKwUjAA",
+      "ver": "1.0",
+      "wids": "b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_act_fct": "3 5",
+      "xms_aud_guid": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "xms_ftd": "JL1dDZX-mhIDIU7DBVXlxRMn4e0ISjj80jZDKAT_NGkBdXNzb3V0aC1kc21z",
+      "xms_idrel": "1 28",
+      "xms_sub_fct": "20 3",
+      "xms_tcdt": "1378746733"
+    },
+    "correlationId": "110cd2ff-bd4c-3573-4fe1-4df68034ac2a",
+    "description": "",
+    "eventDataId": "dc2ac20f-8900-4f57-be81-16e71ef42361",
+    "eventName": {
+      "localizedValue": "Begin request",
+      "value": "BeginRequest"
+    },
+    "eventTimestamp": "2026-11-24T03:03:34.7211233Z",
+    "httpRequest": {
+      "clientIpAddress": "179.33.207.190",
+      "clientRequestId": "",
+      "method": "POST",
+      "uri": "https://management.azure.com/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.OperationalInsights/workspaces/logs-csorejuela26/sharedKeys?api-version=2020-08-01"
+    },
+    "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.OperationalInsights/workspaces/logs-csorejuela26/events/dc2ac20f-8900-4f57-be81-16e71ef42361/ticks/639310862147211233",
+    "level": "Informational",
+    "operationId": "7f1913db-8c27-47b6-bd9d-ce38217dc949",
+    "operationName": {
+      "localizedValue": "List Workspace Shared Keys",
+      "value": "Microsoft.OperationalInsights/workspaces/sharedKeys/action"
+    },
+    "properties": {
+      "entity": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.OperationalInsights/workspaces/logs-csorejuela26",
+      "eventCategory": "Administrative",
+      "hierarchy": "ea649e50-27d2-4318-9cb9-2fcffe16fd41/c41aefb4-032e-4e2b-80a2-41e39d7c1425",
+      "message": "Microsoft.OperationalInsights/workspaces/sharedKeys/action"
+    },
+    "resourceGroup": "rg-csorejuela26",
+    "resourceGroupName": "rg-csorejuela26",
+    "resourceId": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.OperationalInsights/workspaces/logs-csorejuela26",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.OperationalInsights",
+      "value": "Microsoft.OperationalInsights"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.OperationalInsights/workspaces",
+      "value": "Microsoft.OperationalInsights/workspaces"
+    },
+    "status": {
+      "localizedValue": "Started",
+      "value": "Started"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2026-11-24T03:05:30Z",
+    "subscriptionId": "c41aefb4-032e-4e2b-80a2-41e39d7c1425",
+    "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41"
+  }
+]

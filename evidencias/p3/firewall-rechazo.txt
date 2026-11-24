@@ -1,0 +1,12 @@
+ERROR: (Forbidden) Client address is not authorized and caller was ignored because bypass is set to None
+Client address: 179.33.207.190
+Caller: appid=04b07795-8ddb-461a-bbee-02f9e1bf7b46;oid=b812070b-9f0a-49b6-930c-ffa76d2e22b0
+Vault: kv-csorejuela26;location=canadacentral
+Code: Forbidden
+Message: Client address is not authorized and caller was ignored because bypass is set to None
+Client address: 179.33.207.190
+Caller: appid=04b07795-8ddb-461a-bbee-02f9e1bf7b46;oid=b812070b-9f0a-49b6-930c-ffa76d2e22b0
+Vault: kv-csorejuela26;location=canadacentral
+Inner error: {
+    "code": "ForbiddenByFirewall"
+}

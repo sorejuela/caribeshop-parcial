@@ -1,0 +1,6 @@
+{"time_utc": "2026-11-24T03:22:36.846130+00:00", "response": {"secret_read": true, "length": 32, "instance": "vmss-csorejuela26000002"}}
+{"time_utc": "2026-11-24T03:22:37.650600+00:00", "response": {"secret_read": true, "length": 32, "instance": "vmss-csorejuela26000002"}}
+{"time_utc": "2026-11-24T03:22:38.777259+00:00", "response": {"secret_read": true, "length": 32, "instance": "vmss-csorejuela26000003"}}
+{"time_utc": "2026-11-24T03:22:39.818005+00:00", "response": {"secret_read": true, "length": 32, "instance": "vmss-csorejuela26000002"}}
+{"time_utc": "2026-11-24T03:22:40.730367+00:00", "response": {"secret_read": true, "length": 32, "instance": "vmss-csorejuela26000001"}}
+{"time_utc": "2026-11-24T03:22:41.484028+00:00", "response": {"secret_read": true, "length": 32, "instance": "vmss-csorejuela26000002"}}

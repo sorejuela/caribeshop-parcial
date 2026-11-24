@@ -1,0 +1,157 @@
+{
+  "cost": 26,
+  "interval": "PT1M",
+  "namespace": "Microsoft.Compute/virtualMachineScaleSets",
+  "resourceregion": "canadacentral",
+  "timespan": "2026-11-24T02:43:00Z/2026-11-24T02:57:00Z",
+  "value": [
+    {
+      "displayDescription": "The percentage of allocated compute units that are currently in use by the Virtual Machine(s)",
+      "errorCode": "Success",
+      "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26/providers/Microsoft.Insights/metrics/Percentage CPU",
+      "name": {
+        "localizedValue": "Percentage CPU",
+        "value": "Percentage CPU"
+      },
+      "resourceGroup": "rg-csorejuela26",
+      "timeseries": [
+        {
+          "data": [
+            {
+              "timeStamp": "2026-11-24T02:43:00Z"
+            },
+            {
+              "average": 4.65,
+              "timeStamp": "2026-11-24T02:44:00Z"
+            },
+            {
+              "average": 0.15,
+              "timeStamp": "2026-11-24T02:45:00Z"
+            },
+            {
+              "average": 0.12,
+              "timeStamp": "2026-11-24T02:46:00Z"
+            },
+            {
+              "average": 11.075,
+              "timeStamp": "2026-11-24T02:47:00Z"
+            },
+            {
+              "average": 24.545,
+              "timeStamp": "2026-11-24T02:48:00Z"
+            },
+            {
+              "average": 23.965,
+              "timeStamp": "2026-11-24T02:49:00Z"
+            },
+            {
+              "average": 31.58,
+              "timeStamp": "2026-11-24T02:50:00Z"
+            },
+            {
+              "average": 41.275,
+              "timeStamp": "2026-11-24T02:51:00Z"
+            },
+            {
+              "average": 43.48,
+              "timeStamp": "2026-11-24T02:52:00Z"
+            },
+            {
+              "average": 23.305,
+              "timeStamp": "2026-11-24T02:53:00Z"
+            },
+            {
+              "average": 5.045,
+              "timeStamp": "2026-11-24T02:54:00Z"
+            },
+            {
+              "average": 10.525,
+              "timeStamp": "2026-11-24T02:55:00Z"
+            },
+            {
+              "average": 10.25,
+              "timeStamp": "2026-11-24T02:56:00Z"
+            }
+          ],
+          "metadatavalues": []
+        }
+      ],
+      "type": "Microsoft.Insights/metrics",
+      "unit": "Percent"
+    },
+    {
+      "displayDescription": "Total number of credits available to burst. Only available on B-series burstable VMs",
+      "errorCode": "Success",
+      "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26/providers/Microsoft.Insights/metrics/CPU Credits Remaining",
+      "name": {
+        "localizedValue": "CPU Credits Remaining",
+        "value": "CPU Credits Remaining"
+      },
+      "resourceGroup": "rg-csorejuela26",
+      "timeseries": [
+        {
+          "data": [
+            {
+              "timeStamp": "2026-11-24T02:43:00Z"
+            },
+            {
+              "average": 61.265,
+              "timeStamp": "2026-11-24T02:44:00Z"
+            },
+            {
+              "average": 62.11,
+              "timeStamp": "2026-11-24T02:45:00Z"
+            },
+            {
+              "average": 62.58,
+              "timeStamp": "2026-11-24T02:46:00Z"
+            },
+            {
+              "average": 62.69,
+              "timeStamp": "2026-11-24T02:47:00Z"
+            },
+            {
+              "average": 62.82,
+              "timeStamp": "2026-11-24T02:48:00Z"
+            },
+            {
+              "average": 62.86,
+              "timeStamp": "2026-11-24T02:49:00Z"
+            },
+            {
+              "average": 62.64,
+              "timeStamp": "2026-11-24T02:50:00Z"
+            },
+            {
+              "average": 62.38,
+              "timeStamp": "2026-11-24T02:51:00Z"
+            },
+            {
+              "average": 62.36,
+              "timeStamp": "2026-11-24T02:52:00Z"
+            },
+            {
+              "average": 62.9,
+              "timeStamp": "2026-11-24T02:53:00Z"
+            },
+            {
+              "average": 63.29,
+              "timeStamp": "2026-11-24T02:54:00Z"
+            },
+            {
+              "average": 63.69,
+              "timeStamp": "2026-11-24T02:55:00Z"
+            },
+            {
+              "average": 64.15,
+              "timeStamp": "2026-11-24T02:56:00Z"
+            }
+          ],
+          "metadatavalues": []
+        }
+      ],
+      "type": "Microsoft.Insights/metrics",
+      "unit": "Count"
+    }
+  ]
+}

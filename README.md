@@ -2,7 +2,7 @@
 
 Laboratorio de seguridad, autoscale y alta disponibilidad en Azure. Terraform crea la infraestructura y cloud-init inicia una app Python sin paquetes externos. No implementamos una tienda real: `/work` genera carga CPU reproducible y `/secret` demuestra acceso a Key Vault sin divulgar el valor.
 
-**Estado:** implementación local. El despliegue, P1/P2/P3, el informe final y el video requieren una suscripción con crédito y evidencias reales. Las verificaciones locales no prueban el funcionamiento en Azure.
+**Estado (23 de noviembre de 2026):** laboratorio desplegado y verificado en Azure. P1 completada: medición de una VM y ensayo de 30 minutos con aumento y reducción automática. P3 completada: firewall del vault, salida restringida y Policy Deny. El pipeline fallido y su corrección están documentados. Quedan por cerrar P2, la evidencia KQL de lectura, el PDF, la grabación grupal y la destrucción.
 
 ## Arquitectura
 
@@ -137,7 +137,7 @@ Si el grupo ya no existe, el último comando puede responder `ResourceGroupNotFo
 
 ## Línea base
 
-Estas marcas indican controles implementados en código; la evidencia en Azure está pendiente.
+Las marcas distinguen la implementación de las evidencias todavía pendientes.
 
 - [x] Backend azurerm, estado y variables reales fuera de Git.
 - [x] VMSS en dos zonas; sin IP pública ni entrada SSH/RDP.
@@ -146,8 +146,11 @@ Estas marcas indican controles implementados en código; la evidencia en Azure e
 - [x] Policy Deny, auditoría, alerta por correo y reparación automática.
 - [x] Autoscale con histéresis, cooldown e `ignore_changes = [instances]`.
 - [x] Arranque automático y pipeline bloqueante.
-- [ ] Despliegue verificado, P1/P2/P3 y pruebas negativas.
-- [ ] Informe PDF final con datos propios y video grupal de 6–8 minutos.
+- [x] Despliegue verificado, P1 con scale-out/scale-in y pruebas negativas P3.
+- [ ] P2: fallas lógica y abrupta medidas, con reemplazo de instancia.
+- [ ] Consulta KQL con lectura real del secreto por la identidad del VMSS.
+- [ ] Informe PDF final con datos propios.
+- [ ] Video grupal de 6–8 minutos publicado en YouTube.
 - [ ] Recursos destruidos y limpieza verificada.
 
 ## Integrantes

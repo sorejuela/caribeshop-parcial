@@ -1,0 +1,38 @@
+[
+  {
+    "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/microsoft.keyvault/vaults/kv-csorejuela26/providers/microsoft.insights/diagnosticSettings/keyvault-audit",
+    "logAnalyticsDestinationType": "AzureDiagnostics",
+    "logs": [
+      {
+        "category": "AuditEvent",
+        "enabled": true,
+        "retentionPolicy": {
+          "days": 0,
+          "enabled": false
+        }
+      },
+      {
+        "category": "AzurePolicyEvaluationDetails",
+        "enabled": false,
+        "retentionPolicy": {
+          "days": 0,
+          "enabled": false
+        }
+      }
+    ],
+    "metrics": [
+      {
+        "category": "AllMetrics",
+        "enabled": false,
+        "retentionPolicy": {
+          "days": 0,
+          "enabled": false
+        }
+      }
+    ],
+    "name": "keyvault-audit",
+    "resourceGroup": "rg-csorejuela26",
+    "type": "Microsoft.Insights/diagnosticSettings",
+    "workspaceId": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.OperationalInsights/workspaces/logs-csorejuela26"
+  }
+]

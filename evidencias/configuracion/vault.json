@@ -1,0 +1,22 @@
+{
+  "nombre": "kv-csorejuela26",
+  "purgeProtection": true,
+  "rbac": true,
+  "red": {
+    "bypass": "None",
+    "defaultAction": "Deny",
+    "ipRules": [
+      {
+        "value": "179.33.207.190/32"
+      }
+    ],
+    "virtualNetworkRules": [
+      {
+        "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/microsoft.network/virtualnetworks/vnet-csorejuela26/subnets/snet-app",
+        "ignoreMissingVnetServiceEndpoint": null,
+        "resourceGroup": "rg-csorejuela26"
+      }
+    ]
+  },
+  "retencion": 7
+}

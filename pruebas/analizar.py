@@ -55,6 +55,12 @@ if args.mode == "carga":
     axes[2].set_ylabel("Instancias")
     axes[2].yaxis.set_major_locator(MaxNLocator(integer=True))
     axes[2].set_ylim(bottom=0, top=max(int(r["instances"]) for r in instances) + 1)
+    gaps = [(utc(a["timestamp"]), utc(b["timestamp"]))
+            for a, b in zip(instances, instances[1:])
+            if float(b["timestamp"]) - float(a["timestamp"]) > 45]
+    for i, (start, end) in enumerate(gaps):
+        axes[2].axvspan(start, end, color="#cccccc", alpha=0.5,
+                       label="Sin muestra" if i == 0 else None)
     axes[2].legend()
     axes[2].xaxis.set_major_formatter(mdates.DateFormatter("%H:%M", tz=timezone.utc))
     axes[2].set_xlabel("Hora UTC (p95 de la ventana reciente de Locust)")

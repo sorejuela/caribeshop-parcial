@@ -1,0 +1,63 @@
+{
+  "inicio_epoch": 1795489096.8041239,
+  "fin_epoch": 1795490898.641949,
+  "duracion_s": 1801.8378250598907,
+  "peticiones": 123845,
+  "errores": 4,
+  "porcentaje_error": 0.0032298437563082886,
+  "rps_global": 68.8114705890027,
+  "p95_global_locust_ms": 1500.0,
+  "primeras_respuestas": {
+    "vmss-csorejuela26000002": 1795489097.3605728,
+    "vmss-csorejuela26000001": 1795489097.384938,
+    "vmss-csorejuela26000003": 1795489641.070305
+  },
+  "max_hueco_observacion_s": 149.71195721626282,
+  "etapas": [
+    {
+      "desde_s": 0,
+      "hasta_s": 180,
+      "usuarios": 10,
+      "peticiones": 3906,
+      "errores": 0,
+      "rps": 21.7,
+      "p95_ms_raw": 1236.67
+    },
+    {
+      "desde_s": 180,
+      "hasta_s": 420,
+      "usuarios": 50,
+      "peticiones": 19787,
+      "errores": 0,
+      "rps": 82.44583333333334,
+      "p95_ms_raw": 1349.66
+    },
+    {
+      "desde_s": 420,
+      "hasta_s": 1080,
+      "usuarios": 100,
+      "peticiones": 87894,
+      "errores": 3,
+      "rps": 133.1727272727273,
+      "p95_ms_raw": 1753.57
+    },
+    {
+      "desde_s": 1080,
+      "hasta_s": 1260,
+      "usuarios": 25,
+      "peticiones": 9298,
+      "errores": 0,
+      "rps": 51.65555555555556,
+      "p95_ms_raw": 1305.31
+    },
+    {
+      "desde_s": 1260,
+      "hasta_s": 1800,
+      "usuarios": 2,
+      "peticiones": 2958,
+      "errores": 1,
+      "rps": 5.477777777777778,
+      "p95_ms_raw": 322.59
+    }
+  ]
+}

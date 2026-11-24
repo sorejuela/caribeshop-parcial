@@ -1,0 +1,19 @@
+[
+  {
+    "createdBy": "b812070b-9f0a-49b6-930c-ffa76d2e22b0",
+    "createdOn": "2026-11-24T02:43:27.518176+00:00",
+    "description": "",
+    "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.KeyVault/vaults/kv-csorejuela26/providers/Microsoft.Authorization/roleAssignments/8ba73db3-45d1-67e8-49d1-cfac3c24056b",
+    "name": "8ba73db3-45d1-67e8-49d1-cfac3c24056b",
+    "principalId": "5260149d-3be1-4fa4-9c56-0c6a749812df",
+    "principalName": "dc53ffec-cea6-49b2-b271-261edeea9683",
+    "principalType": "ServicePrincipal",
+    "resourceGroup": "rg-csorejuela26",
+    "roleDefinitionId": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/providers/Microsoft.Authorization/roleDefinitions/4633458b-17de-408a-b874-0445c86b69e6",
+    "roleDefinitionName": "Key Vault Secrets User",
+    "scope": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.KeyVault/vaults/kv-csorejuela26",
+    "type": "Microsoft.Authorization/roleAssignments",
+    "updatedBy": "b812070b-9f0a-49b6-930c-ffa76d2e22b0",
+    "updatedOn": "2026-11-24T02:43:27.518176+00:00"
+  }
+]

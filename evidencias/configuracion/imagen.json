@@ -1,0 +1,25 @@
+{
+  "architecture": "Arm64",
+  "features": [
+    {
+      "name": "SecurityType",
+      "value": "TrustedLaunchSupported"
+    },
+    {
+      "name": "IsAcceleratedNetworkSupported",
+      "value": "True"
+    },
+    {
+      "name": "DiskControllerTypes",
+      "value": "SCSI, NVMe"
+    },
+    {
+      "name": "IsHibernateSupported",
+      "value": "True"
+    }
+  ],
+  "osDiskImage": {
+    "operatingSystem": "Linux"
+  },
+  "version": "24.04.202611170"
+}

@@ -4,6 +4,7 @@ import argparse
 import csv
 import json
 import subprocess
+import sys
 import time
 
 parser = argparse.ArgumentParser()
@@ -15,7 +16,8 @@ args = parser.parse_args()
 
 
 def az(*command):
-    return json.loads(subprocess.check_output(["az", *command, "-o", "json"], text=True))
+    return json.loads(subprocess.check_output(
+        ["az", *command, "-o", "json"], text=True, timeout=30))
 
 
 end = time.monotonic() + args.seconds
@@ -24,9 +26,14 @@ with open(args.output, "w", newline="", buffering=1) as stream:
     writer.writerow(["timestamp", "instances", "capacity", "instance_ids", "zones", "healthy", "hostnames"])
     try:
         while time.monotonic() < end:
-            instances = az("vmss", "list-instances", "-g", args.group, "-n", args.vmss,
-                           "--expand", "instanceView")
-            vmss = az("vmss", "show", "-g", args.group, "-n", args.vmss)
+            try:
+                instances = az("vmss", "list-instances", "-g", args.group, "-n", args.vmss,
+                               "--expand", "instanceView")
+                vmss = az("vmss", "show", "-g", args.group, "-n", args.vmss)
+            except (subprocess.TimeoutExpired, subprocess.CalledProcessError) as error:
+                print(f"Muestra no disponible: {error}", file=sys.stderr, flush=True)
+                time.sleep(15)
+                continue
             writer.writerow([
                 time.time(), len(instances), vmss["sku"]["capacity"],
                 ";".join(str(vm["instanceId"]) for vm in instances),

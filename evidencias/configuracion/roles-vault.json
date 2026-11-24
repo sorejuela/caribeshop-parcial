@@ -1,0 +1,22 @@
+[
+  {
+    "principal": "d49843d0-e834-4e17-b876-c1525cc8289c",
+    "rol": "User Access Administrator",
+    "scope": "/"
+  },
+  {
+    "principal": "b812070b-9f0a-49b6-930c-ffa76d2e22b0",
+    "rol": "Owner",
+    "scope": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425"
+  },
+  {
+    "principal": "b812070b-9f0a-49b6-930c-ffa76d2e22b0",
+    "rol": "Key Vault Secrets Officer",
+    "scope": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.KeyVault/vaults/kv-csorejuela26"
+  },
+  {
+    "principal": "5260149d-3be1-4fa4-9c56-0c6a749812df",
+    "rol": "Key Vault Secrets User",
+    "scope": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.KeyVault/vaults/kv-csorejuela26"
+  }
+]

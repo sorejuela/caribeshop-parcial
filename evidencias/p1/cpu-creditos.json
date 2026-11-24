@@ -1,0 +1,437 @@
+{
+  "cost": 96,
+  "interval": "PT1M",
+  "namespace": "Microsoft.Compute/virtualMachineScaleSets",
+  "resourceregion": "canadacentral",
+  "timespan": "2026-11-24T02:58:00Z/2026-11-24T03:47:03Z",
+  "value": [
+    {
+      "displayDescription": "The percentage of allocated compute units that are currently in use by the Virtual Machine(s)",
+      "errorCode": "Success",
+      "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26/providers/Microsoft.Insights/metrics/Percentage CPU",
+      "name": {
+        "localizedValue": "Percentage CPU",
+        "value": "Percentage CPU"
+      },
+      "resourceGroup": "rg-csorejuela26",
+      "timeseries": [
+        {
+          "data": [
+            {
+              "average": 0.39999999999999997,
+              "timeStamp": "2026-11-24T02:58:00Z"
+            },
+            {
+              "average": 8.69,
+              "timeStamp": "2026-11-24T02:59:00Z"
+            },
+            {
+              "average": 21.2,
+              "timeStamp": "2026-11-24T03:00:00Z"
+            },
+            {
+              "average": 20.77,
+              "timeStamp": "2026-11-24T03:01:00Z"
+            },
+            {
+              "average": 41.2975,
+              "timeStamp": "2026-11-24T03:02:00Z"
+            },
+            {
+              "average": 79.1225,
+              "timeStamp": "2026-11-24T03:03:00Z"
+            },
+            {
+              "average": 79.0625,
+              "timeStamp": "2026-11-24T03:04:00Z"
+            },
+            {
+              "average": 80.1325,
+              "timeStamp": "2026-11-24T03:05:00Z"
+            },
+            {
+              "average": 85.6825,
+              "timeStamp": "2026-11-24T03:06:00Z"
+            },
+            {
+              "average": 98.555,
+              "timeStamp": "2026-11-24T03:07:00Z"
+            },
+            {
+              "average": 72.40166666666667,
+              "timeStamp": "2026-11-24T03:08:00Z"
+            },
+            {
+              "average": 90.08,
+              "timeStamp": "2026-11-24T03:09:00Z"
+            },
+            {
+              "average": 89.82,
+              "timeStamp": "2026-11-24T03:10:00Z"
+            },
+            {
+              "average": 89.08666666666666,
+              "timeStamp": "2026-11-24T03:11:00Z"
+            },
+            {
+              "average": 89.375,
+              "timeStamp": "2026-11-24T03:12:00Z"
+            },
+            {
+              "average": 88.13166666666666,
+              "timeStamp": "2026-11-24T03:13:00Z"
+            },
+            {
+              "average": 88.12833333333333,
+              "timeStamp": "2026-11-24T03:14:00Z"
+            },
+            {
+              "average": 88.255,
+              "timeStamp": "2026-11-24T03:15:00Z"
+            },
+            {
+              "average": 87.765,
+              "timeStamp": "2026-11-24T03:16:00Z"
+            },
+            {
+              "average": 74.16166666666668,
+              "timeStamp": "2026-11-24T03:17:00Z"
+            },
+            {
+              "average": 30.448333333333334,
+              "timeStamp": "2026-11-24T03:18:00Z"
+            },
+            {
+              "average": 29.955,
+              "timeStamp": "2026-11-24T03:19:00Z"
+            },
+            {
+              "average": 20.544999999999998,
+              "timeStamp": "2026-11-24T03:20:00Z"
+            },
+            {
+              "average": 3.5025,
+              "timeStamp": "2026-11-24T03:21:00Z"
+            },
+            {
+              "average": 3.425,
+              "timeStamp": "2026-11-24T03:22:00Z"
+            },
+            {
+              "average": 3.526666666666667,
+              "timeStamp": "2026-11-24T03:23:00Z"
+            },
+            {
+              "average": 3.888333333333333,
+              "timeStamp": "2026-11-24T03:24:00Z"
+            },
+            {
+              "average": 4.8725,
+              "timeStamp": "2026-11-24T03:25:00Z"
+            },
+            {
+              "average": 5.24,
+              "timeStamp": "2026-11-24T03:26:00Z"
+            },
+            {
+              "average": 5.13,
+              "timeStamp": "2026-11-24T03:27:00Z"
+            },
+            {
+              "average": 5.14,
+              "timeStamp": "2026-11-24T03:28:00Z"
+            },
+            {
+              "average": 3.1375,
+              "timeStamp": "2026-11-24T03:29:00Z"
+            },
+            {
+              "average": 0.1125,
+              "timeStamp": "2026-11-24T03:30:00Z"
+            },
+            {
+              "average": 5.025,
+              "timeStamp": "2026-11-24T03:31:00Z"
+            },
+            {
+              "average": 5.1375,
+              "timeStamp": "2026-11-24T03:32:00Z"
+            },
+            {
+              "average": 4.8025,
+              "timeStamp": "2026-11-24T03:33:00Z"
+            },
+            {
+              "average": 4.9625,
+              "timeStamp": "2026-11-24T03:34:00Z"
+            },
+            {
+              "average": 5.14,
+              "timeStamp": "2026-11-24T03:35:00Z"
+            },
+            {
+              "average": 4.96,
+              "timeStamp": "2026-11-24T03:36:00Z"
+            },
+            {
+              "average": 0.19,
+              "timeStamp": "2026-11-24T03:37:00Z"
+            },
+            {
+              "average": 0.1175,
+              "timeStamp": "2026-11-24T03:38:00Z"
+            },
+            {
+              "average": 0.1175,
+              "timeStamp": "2026-11-24T03:39:00Z"
+            },
+            {
+              "average": 0.1125,
+              "timeStamp": "2026-11-24T03:40:00Z"
+            },
+            {
+              "average": 0.12,
+              "timeStamp": "2026-11-24T03:41:00Z"
+            },
+            {
+              "average": 0.1125,
+              "timeStamp": "2026-11-24T03:42:00Z"
+            },
+            {
+              "average": 0.1125,
+              "timeStamp": "2026-11-24T03:43:00Z"
+            },
+            {
+              "average": 0.12,
+              "timeStamp": "2026-11-24T03:44:00Z"
+            },
+            {
+              "average": 0.115,
+              "timeStamp": "2026-11-24T03:45:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:46:00Z"
+            }
+          ],
+          "metadatavalues": []
+        }
+      ],
+      "type": "Microsoft.Insights/metrics",
+      "unit": "Percent"
+    },
+    {
+      "displayDescription": "Total number of credits available to burst. Only available on B-series burstable VMs",
+      "errorCode": "Success",
+      "id": "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26/providers/Microsoft.Insights/metrics/CPU Credits Remaining",
+      "name": {
+        "localizedValue": "CPU Credits Remaining",
+        "value": "CPU Credits Remaining"
+      },
+      "resourceGroup": "rg-csorejuela26",
+      "timeseries": [
+        {
+          "data": [
+            {
+              "average": 62.97,
+              "timeStamp": "2026-11-24T02:58:00Z"
+            },
+            {
+              "average": 63.3,
+              "timeStamp": "2026-11-24T02:59:00Z"
+            },
+            {
+              "average": 63.485,
+              "timeStamp": "2026-11-24T03:00:00Z"
+            },
+            {
+              "average": 63.665,
+              "timeStamp": "2026-11-24T03:01:00Z"
+            },
+            {
+              "average": 63.155,
+              "timeStamp": "2026-11-24T03:02:00Z"
+            },
+            {
+              "average": 62.18,
+              "timeStamp": "2026-11-24T03:03:00Z"
+            },
+            {
+              "average": 61.19,
+              "timeStamp": "2026-11-24T03:04:00Z"
+            },
+            {
+              "average": 60.195,
+              "timeStamp": "2026-11-24T03:05:00Z"
+            },
+            {
+              "average": 58.985,
+              "timeStamp": "2026-11-24T03:06:00Z"
+            },
+            {
+              "average": 57.61,
+              "timeStamp": "2026-11-24T03:07:00Z"
+            },
+            {
+              "average": 57.53333333333333,
+              "timeStamp": "2026-11-24T03:08:00Z"
+            },
+            {
+              "average": 56.33333333333333,
+              "timeStamp": "2026-11-24T03:09:00Z"
+            },
+            {
+              "average": 55.15,
+              "timeStamp": "2026-11-24T03:10:00Z"
+            },
+            {
+              "average": 53.96333333333333,
+              "timeStamp": "2026-11-24T03:11:00Z"
+            },
+            {
+              "average": 52.77666666666667,
+              "timeStamp": "2026-11-24T03:12:00Z"
+            },
+            {
+              "average": 51.63,
+              "timeStamp": "2026-11-24T03:13:00Z"
+            },
+            {
+              "average": 50.46666666666667,
+              "timeStamp": "2026-11-24T03:14:00Z"
+            },
+            {
+              "average": 49.29333333333333,
+              "timeStamp": "2026-11-24T03:15:00Z"
+            },
+            {
+              "average": 48.14,
+              "timeStamp": "2026-11-24T03:16:00Z"
+            },
+            {
+              "average": 47.63333333333333,
+              "timeStamp": "2026-11-24T03:17:00Z"
+            },
+            {
+              "average": 47.63,
+              "timeStamp": "2026-11-24T03:18:00Z"
+            },
+            {
+              "average": 47.63666666666667,
+              "timeStamp": "2026-11-24T03:19:00Z"
+            },
+            {
+              "average": 47.99333333333333,
+              "timeStamp": "2026-11-24T03:20:00Z"
+            },
+            {
+              "average": 48.53,
+              "timeStamp": "2026-11-24T03:21:00Z"
+            },
+            {
+              "average": 49.06333333333333,
+              "timeStamp": "2026-11-24T03:22:00Z"
+            },
+            {
+              "average": 49.59,
+              "timeStamp": "2026-11-24T03:23:00Z"
+            },
+            {
+              "average": 48.88,
+              "timeStamp": "2026-11-24T03:24:00Z"
+            },
+            {
+              "average": 49.385,
+              "timeStamp": "2026-11-24T03:25:00Z"
+            },
+            {
+              "average": 49.885,
+              "timeStamp": "2026-11-24T03:26:00Z"
+            },
+            {
+              "average": 50.385,
+              "timeStamp": "2026-11-24T03:27:00Z"
+            },
+            {
+              "average": 50.885,
+              "timeStamp": "2026-11-24T03:28:00Z"
+            },
+            {
+              "average": 51.45,
+              "timeStamp": "2026-11-24T03:29:00Z"
+            },
+            {
+              "average": 52.05,
+              "timeStamp": "2026-11-24T03:30:00Z"
+            },
+            {
+              "average": 52.59,
+              "timeStamp": "2026-11-24T03:31:00Z"
+            },
+            {
+              "average": 53.09,
+              "timeStamp": "2026-11-24T03:32:00Z"
+            },
+            {
+              "average": 55.93,
+              "timeStamp": "2026-11-24T03:33:00Z"
+            },
+            {
+              "average": 53.15333333333333,
+              "timeStamp": "2026-11-24T03:34:00Z"
+            },
+            {
+              "average": 54.6,
+              "timeStamp": "2026-11-24T03:35:00Z"
+            },
+            {
+              "average": 55.1,
+              "timeStamp": "2026-11-24T03:36:00Z"
+            },
+            {
+              "average": 55.67,
+              "timeStamp": "2026-11-24T03:37:00Z"
+            },
+            {
+              "average": 56.27,
+              "timeStamp": "2026-11-24T03:38:00Z"
+            },
+            {
+              "average": 56.87,
+              "timeStamp": "2026-11-24T03:39:00Z"
+            },
+            {
+              "average": 57.47,
+              "timeStamp": "2026-11-24T03:40:00Z"
+            },
+            {
+              "average": 58.07,
+              "timeStamp": "2026-11-24T03:41:00Z"
+            },
+            {
+              "average": 58.67,
+              "timeStamp": "2026-11-24T03:42:00Z"
+            },
+            {
+              "average": 59.27,
+              "timeStamp": "2026-11-24T03:43:00Z"
+            },
+            {
+              "average": 59.87,
+              "timeStamp": "2026-11-24T03:44:00Z"
+            },
+            {
+              "average": 60.47,
+              "timeStamp": "2026-11-24T03:45:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:46:00Z"
+            }
+          ],
+          "metadatavalues": []
+        }
+      ],
+      "type": "Microsoft.Insights/metrics",
+      "unit": "Count"
+    }
+  ]
+}

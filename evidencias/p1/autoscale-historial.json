@@ -1,0 +1,179 @@
+{
+  "tables": [
+    {
+      "columns": [
+        {
+          "name": "TenantId",
+          "type": "string"
+        },
+        {
+          "name": "SourceSystem",
+          "type": "string"
+        },
+        {
+          "name": "TimeGenerated",
+          "type": "datetime"
+        },
+        {
+          "name": "ResourceId",
+          "type": "string"
+        },
+        {
+          "name": "OperationName",
+          "type": "string"
+        },
+        {
+          "name": "Category",
+          "type": "string"
+        },
+        {
+          "name": "ResultType",
+          "type": "string"
+        },
+        {
+          "name": "ResultDescription",
+          "type": "string"
+        },
+        {
+          "name": "CorrelationId",
+          "type": "string"
+        },
+        {
+          "name": "TargetResourceId",
+          "type": "string"
+        },
+        {
+          "name": "CreatedAsyncScaleActionJob",
+          "type": "bool"
+        },
+        {
+          "name": "CreatedAsyncScaleActionJobId",
+          "type": "string"
+        },
+        {
+          "name": "CurrentInstanceCount",
+          "type": "int"
+        },
+        {
+          "name": "NewInstanceCount",
+          "type": "int"
+        },
+        {
+          "name": "ScaleActionMessage",
+          "type": "string"
+        },
+        {
+          "name": "ScaleActionOperationId",
+          "type": "string"
+        },
+        {
+          "name": "ScaleActionOperationStatus",
+          "type": "string"
+        },
+        {
+          "name": "ScaleDirection",
+          "type": "string"
+        },
+        {
+          "name": "Type",
+          "type": "string"
+        },
+        {
+          "name": "_ResourceId",
+          "type": "string"
+        }
+      ],
+      "name": "PrimaryResult",
+      "rows": [
+        [
+          "41e8294a-e315-481f-a81b-db0558c72a6f",
+          "Azure",
+          "2026-11-24T02:45:04.4984579Z",
+          "/SUBSCRIPTIONS/C41AEFB4-032E-4E2B-80A2-41E39D7C1425/RESOURCEGROUPS/RG-CSOREJUELA26/PROVIDERS/MICROSOFT.INSIGHTS/AUTOSCALESETTINGS/AUTOSCALE-CSOREJUELA26",
+          "InstanceScaleAction",
+          "AutoscaleScaleActions",
+          "Succeeded",
+          "",
+          "1e27688b-3f32-4268-9977-860264acba0b",
+          "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26",
+          null,
+          "",
+          2,
+          1,
+          "",
+          "",
+          "",
+          "Decrease",
+          "AutoscaleScaleActionsLog",
+          "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/microsoft.insights/autoscalesettings/autoscale-csorejuela26"
+        ],
+        [
+          "41e8294a-e315-481f-a81b-db0558c72a6f",
+          "Azure",
+          "2026-11-24T02:56:41.1445901Z",
+          "/SUBSCRIPTIONS/C41AEFB4-032E-4E2B-80A2-41E39D7C1425/RESOURCEGROUPS/RG-CSOREJUELA26/PROVIDERS/MICROSOFT.INSIGHTS/AUTOSCALESETTINGS/AUTOSCALE-CSOREJUELA26",
+          "InstanceScaleAction",
+          "AutoscaleScaleActions",
+          "Succeeded",
+          "",
+          "a83ba814-77a9-4b7a-a290-193dc05d7df3",
+          "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26",
+          null,
+          "",
+          1,
+          2,
+          "",
+          "",
+          "",
+          "Increase",
+          "AutoscaleScaleActionsLog",
+          "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/microsoft.insights/autoscalesettings/autoscale-csorejuela26"
+        ],
+        [
+          "41e8294a-e315-481f-a81b-db0558c72a6f",
+          "Azure",
+          "2026-11-24T03:06:10.5161378Z",
+          "/SUBSCRIPTIONS/C41AEFB4-032E-4E2B-80A2-41E39D7C1425/RESOURCEGROUPS/RG-CSOREJUELA26/PROVIDERS/MICROSOFT.INSIGHTS/AUTOSCALESETTINGS/AUTOSCALE-CSOREJUELA26",
+          "InstanceScaleAction",
+          "AutoscaleScaleActions",
+          "Succeeded",
+          "",
+          "ac4ab797-6f31-4a1d-9911-0c216acd5414",
+          "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26",
+          null,
+          "",
+          2,
+          3,
+          "",
+          "",
+          "",
+          "Increase",
+          "AutoscaleScaleActionsLog",
+          "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/microsoft.insights/autoscalesettings/autoscale-csorejuela26"
+        ],
+        [
+          "41e8294a-e315-481f-a81b-db0558c72a6f",
+          "Azure",
+          "2026-11-24T03:23:41.4183373Z",
+          "/SUBSCRIPTIONS/C41AEFB4-032E-4E2B-80A2-41E39D7C1425/RESOURCEGROUPS/RG-CSOREJUELA26/PROVIDERS/MICROSOFT.INSIGHTS/AUTOSCALESETTINGS/AUTOSCALE-CSOREJUELA26",
+          "InstanceScaleAction",
+          "AutoscaleScaleActions",
+          "Succeeded",
+          "",
+          "cea85a07-076d-4526-95f6-06ed678160fc",
+          "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourceGroups/rg-csorejuela26/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-csorejuela26",
+          null,
+          "",
+          3,
+          2,
+          "",
+          "",
+          "",
+          "Decrease",
+          "AutoscaleScaleActionsLog",
+          "/subscriptions/c41aefb4-032e-4e2b-80a2-41e39d7c1425/resourcegroups/rg-csorejuela26/providers/microsoft.insights/autoscalesettings/autoscale-csorejuela26"
+        ]
+      ]
+    }
+  ]
+}
