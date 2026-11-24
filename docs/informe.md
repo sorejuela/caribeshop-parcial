@@ -91,6 +91,8 @@ Locust ejecutó cinco tramos: 10 usuarios durante tres minutos, 50 durante cuatr
 
 Entre 02:58:16 y 03:28:18 UTC se completaron 123.845 solicitudes, cuatro fallidas (0,00323 %), 68,81 RPS medios y p95 global de 1.500 ms. Durante el tramo de 100 usuarios se atendieron 133,17 RPS de media y el p95 fue de 1.754 ms. El objetivo de 500 ms no se sostuvo a esa carga. La decisión 2 → 3 ocurrió a las 03:06:10; la VM nueva atendió a las 03:07:21: 70,55 s después de la decisión y 364,27 s desde el escalón de 50 usuarios. La reducción 3 → 2 se decidió a las 03:23:41 y se observó a las 03:23:50. Los créditos CPU mínimos por VM fueron 48,30, 44,54 y 50,05; ninguna agotó su saldo. Una consulta al API dejó un hueco de 149,71 s en el muestreo de instancias, sombreado en gris; Locust continuó registrando tráfico.
 
+El total global procede de `escalamiento_stats.csv`. El registro por petición y el resumen de consola incluyen además dos respuestas exitosas que finalizaron después de los 1.800 s del perfil. Ambos conteos registran cuatro errores.
+
 El gráfico alinea epoch UTC de Locust y Azure. La cantidad de VMs existentes no implica que todas estén listas: la columna `healthy` y la primera respuesta con `X-Instance-ID` permiten contrastar esa diferencia. Las métricas de Azure llegan con retraso de ingestión. No se mezclaron las fallas P2 con esta corrida.
 
 ---
