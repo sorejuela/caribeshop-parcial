@@ -4,7 +4,7 @@ resource "azurerm_linux_virtual_machine_scale_set" "app" {
   resource_group_name             = azurerm_resource_group.app.name
   sku                             = var.vm_size
   instances                       = var.capacity_test ? 1 : 2
-  zones                           = ["1", "2"]
+  zones                           = var.zones
   zone_balance                    = true
   admin_username                  = "azureuser"
   disable_password_authentication = true
@@ -12,8 +12,6 @@ resource "azurerm_linux_virtual_machine_scale_set" "app" {
   health_probe_id                 = azurerm_lb_probe.health.id
   overprovision                   = false
   encryption_at_host_enabled      = true
-  secure_boot_enabled             = true
-  vtpm_enabled                    = true
   admin_ssh_key {
     username   = "azureuser"
     public_key = var.ssh_public_key
@@ -22,7 +20,7 @@ resource "azurerm_linux_virtual_machine_scale_set" "app" {
   source_image_reference {
     publisher = "Canonical"
     offer     = "ubuntu-24_04-lts"
-    sku       = "server"
+    sku       = var.image_sku
     version   = var.image_version
   }
   os_disk {

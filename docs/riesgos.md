@@ -20,4 +20,5 @@ Otros límites que Checkov no elimina:
 - `/health` comprueba el proceso local, no Key Vault. El endpoint de secreto puede fallar aunque la sonda sea sana. Se evita así retirar simultáneamente todas las VMs ante un incidente externo.
 - Ubuntu con versión fijada no se actualiza desde Internet al arrancar. El filtrado de salida lo impide deliberadamente. Actualizar periódicamente la imagen base y volver a desplegarla; revisar la versión antes de cada sesión.
 - La serie B puede agotar créditos CPU y distorsionar capacidad/autoscale. Registrar créditos restantes o elegir un SKU sin créditos antes de las pruebas sostenidas.
+- B2pls_v2 admite cifrado en host, pero anuncia `TrustedLaunchDisabled=True`: no se habilitan Secure Boot/vTPM en este laboratorio. Una imagen alterada no tendría esa verificación de arranque. Se usa Ubuntu oficial fijado, proceso sin root y acceso restringido; migrar a un tamaño compatible cuando exista disponibilidad/cuota.
 - El valor generado del secreto queda en el estado y sus versiones. Una filtración requiere rotarlo y revisar accesos; marcarlo `sensitive` no cifra el estado por sí mismo.

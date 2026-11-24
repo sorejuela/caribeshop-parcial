@@ -10,7 +10,7 @@ Laboratorio de seguridad, autoscale y alta disponibilidad en Azure. Terraform cr
 flowchart TD
     U[Internet HTTP :80] --> LB[IP Standard redundante + Load Balancer]
     LB --> A[VMSS · zona 1]
-    LB --> B[VMSS · zona 2]
+    LB --> B[VMSS · zona 3]
     LB -. sonda /health :8080 .-> A
     LB -. sonda /health :8080 .-> B
     A -->|Identidad + service endpoint| KV[Key Vault · RBAC · firewall]
@@ -58,10 +58,10 @@ az policy assignment list --disable-scope-strict-match -o json
 az vm list-usage -l canadacentral -o table
 az vm list-skus -l canadacentral --resource-type virtualMachines --size Standard_B --all -o json
 az vm image list --location canadacentral --publisher Canonical \
-  --offer ubuntu-24_04-lts --sku server --all -o table
+  --offer ubuntu-24_04-lts --sku server-arm64 --all -o table
 ```
 
-El SKU debe estar disponible en las zonas 1 y 2, admitir Trusted Launch y `EncryptionAtHostSupported`, y permitir **al menos tres instancias** dentro de las cuotas regional y de familia. B2s es solo un ejemplo; dos B2s ya consumen 4 vCPU. Si no alcanza, escoger otra talla/región o solicitar cuota. Para medir capacidad sostenida, preferir una serie sin créditos de CPU si la cuota lo permite. Fija una versión numérica de la imagen.
+La configuración elegida usa B2pls_v2 (ARM64, 2 vCPU, 4 GiB), zonas 1 y 3, y máximo 3 instancias: 6 vCPU regionales. El catálogo consultado no indicó restricciones para ese tamaño; eso no garantiza capacidad al desplegar. Se requiere `EncryptionAtHostSupported`. Ese tamaño no admite Trusted Launch; el riesgo está documentado. El SKU debe permitir **al menos tres instancias** dentro de las cuotas regional y de familia. Si no alcanza, escoger otra talla/región o solicitar cuota. Para medir capacidad sostenida, preferir una serie sin créditos de CPU si la cuota lo permite. Fija una versión numérica de la imagen.
 
 Registra, si hace falta, los proveedores `Microsoft.Compute`, `Microsoft.Network`, `Microsoft.Storage`, `Microsoft.KeyVault`, `Microsoft.Insights` y `Microsoft.OperationalInsights` con `az provider register --namespace NOMBRE --wait`. Terraform tiene el registro automático desactivado para evitar registros ajenos al proyecto. Comprueba también que la suscripción admite cifrado en host; si exige registrar `EncryptionAtHost`, completa ese requisito antes del plan.
 

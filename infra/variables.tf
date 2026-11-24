@@ -48,8 +48,24 @@ variable "secret_expiration_date" {
 
 variable "vm_size" {
   type        = string
-  default     = "Standard_B2s"
-  description = "Verificar cuota y créditos CPU antes de medir. Preferir serie D si hay cuota."
+  default     = "Standard_B2pls_v2"
+  description = "ARM64 con 2 vCPU y 4 GiB; verificar disponibilidad y créditos CPU antes de medir."
+}
+
+variable "zones" {
+  type        = list(string)
+  default     = ["1", "3"]
+  description = "Al menos dos zonas disponibles para el SKU en la región elegida."
+  validation {
+    condition     = length(distinct(var.zones)) >= 2 && alltrue([for zone in var.zones : contains(["1", "2", "3"], zone)])
+    error_message = "Selecciona al menos dos zonas distintas entre 1, 2 y 3."
+  }
+}
+
+variable "image_sku" {
+  type        = string
+  default     = "server-arm64"
+  description = "server-arm64 para B2pls_v2; server para máquinas x64. Debe coincidir con el SKU."
 }
 
 variable "image_version" {
@@ -63,7 +79,7 @@ variable "image_version" {
 
 variable "max_instances" {
   type        = number
-  default     = 4
+  default     = 3
   description = "Máximo limitado por la cuota regional y de familia de vCPU."
   validation {
     condition     = var.max_instances >= 2 && var.max_instances <= 10 && floor(var.max_instances) == var.max_instances

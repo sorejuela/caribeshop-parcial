@@ -42,7 +42,9 @@ if args.mode == "carga":
     times = [utc(r["Timestamp"]) for r in history]
     axes[0].plot(times, [float(r["Requests/s"]) for r in history])
     axes[0].set_ylabel("RPS")
-    axes[1].plot(times, [float(r["95%"]) for r in history], color="#ce6d28")
+    # Locust escribe N/A antes de tener muestras; dejar un hueco, no inventar cero.
+    p95 = [float(r["95%"]) if r["95%"] != "N/A" else float("nan") for r in history]
+    axes[1].plot(times, p95, color="#ce6d28")
     axes[1].axhline(1000, color="#777777", linestyle="--", linewidth=1)
     axes[1].set_ylabel("p95 (ms)")
     axes[2].step([utc(r["timestamp"]) for r in instances],
