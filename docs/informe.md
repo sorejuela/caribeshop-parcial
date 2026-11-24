@@ -22,16 +22,16 @@ Se desplegó un laboratorio integrado en Azure mediante Terraform: VM Scale Set 
 
 La prueba escalonada completó 30 minutos, con aumento de dos a tres VMs y reducción posterior a dos. Se registraron 123.845 peticiones y cuatro errores. Las pruebas de falla midieron retirada del tráfico, reemplazo automático y recuperación de capacidad tras eliminación. Las pruebas negativas verificaron firewall, filtrado de salida y Policy Deny; Log Analytics confirmó lecturas del secreto por la identidad administrada. El pipeline rechazó el PR inseguro y aprobó su corrección.
 
-La entrega conserva código, CSV, reportes HTML de Locust y respuestas originales de Azure. Los ensayos locales se mantienen separados de las evidencias cloud. La infraestructura permanece temporalmente activa para grabar la demostración; la comprobación de destrucción se incorpora al cierre.
+La entrega conserva código, CSV, reportes HTML de Locust y respuestas originales de Azure. Los ensayos locales se mantienen separados de las evidencias cloud. Se destruyeron la infraestructura, el backend de estado y el Network Watcher auxiliar creado por Azure durante el despliegue. La consulta final de la suscripción no devolvió recursos activos.
 
 **Repositorio:** [sorejuela/caribeshop-parcial](https://github.com/sorejuela/caribeshop-parcial). El informe es editable en `docs/informe.md`; los datos están en `evidencias/`.
 
-**Entrega audiovisual:** demostración grupal de 6-8 minutos en Teams; el enlace público de YouTube se entrega por separado. La grabación está pendiente al cierre de este documento.
+**Video de la demostración:** [Ver grabación grupal en YouTube](https://youtu.be/JaoqaSU6ZuI). La grabación se realizó al finalizar las pruebas.
 
 ---
 ## 1. Arquitectura y decisiones
 
-![Arquitectura](evidencias/informe/arquitectura.png)
+![Arquitectura](../evidencias/informe/arquitectura.png)
 
 El balanceador publica HTTP 80 y lo dirige al puerto 8080 privado. El NSG permite únicamente ese tráfico y las sondas del servicio; bloquea SSH/RDP y el resto de entradas. Las VMs no tienen IP pública. El NSG de salida permite HTTPS a AzureKeyVault y Storage; el balanceador proporciona salida explícita. Storage es necesario para el canal de Run Command usado en las pruebas.
 
@@ -74,7 +74,7 @@ Se fijó temporalmente el perfil en mínimo = máximo = 1 y se esperó una VM sa
 | 5 | 2.224 | 12,40 | 530 ms | 0 |
 | 10 | 3.923 | 21,85 | 1.200 ms | 0 |
 
-![Capacidad medida](evidencias/informe/capacidad.png)
+![Capacidad medida](../evidencias/informe/capacidad.png)
 
 **El mayor nivel probado con p95 inferior a un segundo fue 12,40 RPS.** El nivel observado con p95 inferior a 500 ms fue 5,29 RPS. Son límites entre los escalones ensayados, no un máximo exacto ni una garantía de producción. El orden de ejecución fue 5, 10 y 2 usuarios; el último ensayo precisó el objetivo de 500 ms.
 
@@ -87,7 +87,7 @@ El perfil normal usa mínimo 2 y máximo 3. Aumenta una VM si CPU media supera 6
 
 Locust ejecutó cinco tramos: 10 usuarios durante tres minutos, 50 durante cuatro, 100 durante once, 25 durante tres y 2 durante nueve. Duración total: 30 minutos. El observador consultó cantidad, capacidad, salud, identificadores y zonas aproximadamente cada 17 segundos; su intervalo incluye las llamadas al API.
 
-![RPS, p95 e instancias](evidencias/p1/escalamiento.png)
+![RPS, p95 e instancias](../evidencias/p1/escalamiento.png)
 
 Entre 02:58:16 y 03:28:18 UTC se completaron 123.845 solicitudes, cuatro fallidas (0,00323 %), 68,81 RPS medios y p95 global de 1.500 ms. Durante el tramo de 100 usuarios se atendieron 133,17 RPS de media y el p95 fue de 1.754 ms. El objetivo de 500 ms no se sostuvo a esa carga. La decisión 2 → 3 ocurrió a las 03:06:10; la VM nueva atendió a las 03:07:21: 70,55 s después de la decisión y 364,27 s desde el escalón de 50 usuarios. La reducción 3 → 2 se decidió a las 03:23:41 y se observó a las 03:23:50. Los créditos CPU mínimos por VM fueron 48,30, 44,54 y 50,05; ninguna agotó su saldo. Una consulta al API dejó un hueco de 149,71 s en el muestreo de instancias, sombreado en gris; Locust continuó registrando tráfico.
 
@@ -112,7 +112,7 @@ La eliminación de la instancia 2 se solicitó a las 04:37:48 UTC y terminó a l
 
 | Prueba | Ventana analizada | Peticiones | Errores y porcentaje |
 |---|---|---|---|
-| Lógica | hasta recuperación: 763,0 s | 2,573 | 12 (0,466 %) |
+| Lógica | hasta recuperación: 763,0 s | 2.573 | 12 (0,466 %) |
 | Lógica | primeros 60 s: 60,0 s | 205 | 12 (5,854 %) |
 | Abrupta | hasta recuperación: 101,9 s | 362 | 2 (0,552 %) |
 | Abrupta | primeros 60 s: 60,0 s | 188 | 2 (1,064 %) |
@@ -207,7 +207,7 @@ Dos VMs durante 600 horas y tres durante 130 horas equivalen a 1.590 VM-horas. M
 
 Los tramos gratuitos se suponen disponibles en la cuenta. Tráfico, logs y operaciones mayores cambian el costo; no se incluyen impuestos, soporte, dominio, WAF ni base de datos. Los detalles y las tarifas originales consultadas de la calculadora están en `docs/costos.md` y `evidencias/costos/tarifas.json`.
 
-El laboratorio se autorizó con un límite de 5 USD de crédito. El costo mensual anterior es un escenario de producción, no el gasto de esta sesión. Los componentes base, con hasta tres VMs, LB, IP y discos, cuestan aproximadamente 0,15 USD por hora; logs y operaciones se consideran aparte. La cuota de ingestión se limitó a 1 GB diario y los recursos se retiran al terminar la demostración.
+El laboratorio se autorizó con un límite de 5 USD de crédito. El costo mensual anterior es un escenario de producción, no el gasto de esta sesión ni una factura del consumo real. Los componentes base, con hasta tres VMs, LB, IP y discos, cuestan aproximadamente 0,15 USD por hora; logs y operaciones se consideran aparte. La cuota de ingestión se limitó a 1 GB diario. El cierre del laboratorio se verifica en la sección 10 y en la evidencia de limpieza.
 
 Fuentes: [Calculadora Azure](https://azure.microsoft.com/pricing/calculator/), [VMs](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/), [discos](https://azure.microsoft.com/en-us/pricing/details/managed-disks/), [Blob](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/), [Monitor](https://azure.microsoft.com/en-us/pricing/details/monitor/), [Key Vault](https://azure.microsoft.com/en-us/pricing/details/key-vault/), [bandwidth](https://azure.microsoft.com/en-us/pricing/details/bandwidth/).
 
@@ -232,7 +232,7 @@ Las preguntas de punto común de falla, ejecución de código malicioso y comple
 
 ### Evidencias, destrucción y video
 
-P1, P2, P3 y las evidencias de DevSecOps están conservadas. La infraestructura permanece activa únicamente para grabar el video; después se destruyen aplicación y backend y se verifica la ausencia de ambos grupos de recursos.
+Se ejecutó terraform destroy para la aplicación y, después de migrar temporalmente el estado del bootstrap a local, se destruyó también el backend. Azure confirmó que rg-csorejuela26, rg-caribeshop-state y NetworkWatcherRG no existen. Se eliminó también la definición de Policy del laboratorio y se verificaron ambos estados Terraform sin recursos administrados. La consulta final no devolvió recursos activos; la evidencia está en evidencias/configuracion/limpieza.json. La retención del vault borrado por purge protection no equivale a cómputo activo; no se intentó purgarlo. Los resultados y la comprobación de limpieza están versionados.
 
 La demostración audiovisual complementa los CSV, los reportes HTML y las respuestas de Azure conservados en el repositorio.
 

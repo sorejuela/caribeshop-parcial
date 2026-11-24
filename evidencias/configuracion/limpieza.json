@@ -1,0 +1,34 @@
+{
+  "verified_at_utc": "2026-11-24T04:59:31.621564+00:00",
+  "subscription_id": "c41aefb4-032e-4e2b-80a2-41e39d7c1425",
+  "app_group_exists": false,
+  "state_group_exists": false,
+  "network_watcher_group_exists": false,
+  "remaining_resources": [],
+  "lab_policy_definition_exists": false,
+  "infra_managed_resources_in_state": 0,
+  "bootstrap_managed_resources_in_state": 0,
+  "soft_deleted_vaults": [
+    {
+      "deletionDate": "2026-11-24T04:55:36+00:00",
+      "location": "canadacentral",
+      "name": "kv-csorejuela26",
+      "purgeProtection": true,
+      "scheduledPurgeDate": "2026-12-01T04:55:36+00:00"
+    }
+  ],
+  "note": "La retención del vault borrado conserva purge protection; no se intentó purgarlo. Esta evidencia verifica recursos, no la factura definitiva de consumo.",
+  "verification_started_at_utc": "2026-11-24T04:58:22.892933+00:00",
+  "terraform_destroyed_counts": {
+    "infra": 31,
+    "bootstrap": 4
+  },
+  "network_watcher_origin": [
+    {
+      "changedTime": "2026-11-24T02:49:19.1304297Z",
+      "createdTime": "2026-11-24T02:39:18.9909239Z",
+      "name": "NetworkWatcher_canadacentral",
+      "type": "Microsoft.Network/networkWatchers"
+    }
+  ]
+}

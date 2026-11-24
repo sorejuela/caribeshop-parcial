@@ -2,7 +2,7 @@
 
 Laboratorio de seguridad, autoscale y alta disponibilidad en Azure. Terraform crea la infraestructura y cloud-init inicia una app Python sin paquetes externos. No implementamos una tienda real: `/work` genera carga CPU reproducible y `/secret` demuestra acceso a Key Vault sin divulgar el valor.
 
-**Estado (23 de noviembre de 2026):** laboratorio desplegado y verificado en Azure. P1 completada: medición de una VM y ensayo de 30 minutos con aumento y reducción automática. P3 completada: firewall del vault, salida restringida y Policy Deny. El pipeline fallido, su corrección y las lecturas del secreto por la identidad administrada en Log Analytics están documentados. P2 completada: retirada del tráfico en 6,71 s, reemplazo automático en 763,00 s y recuperación tras eliminación en 101,89 s. El informe de 11 páginas incluye los resultados. La grabación grupal y la destrucción posterior se completan al cierre de la demostración.
+**Estado (23 de noviembre de 2026):** P1, P2 y P3 completadas en Azure, con resultados y evidencias en el [informe de 11 páginas](output/pdf/Informe_CaribeShop.pdf). Grabación grupal terminada: [video en YouTube](https://youtu.be/JaoqaSU6ZuI). Infraestructura y backend destruidos; la [verificación de limpieza](evidencias/configuracion/limpieza.json) confirmó que no quedan recursos activos en la suscripción.
 
 ## Arquitectura
 
@@ -133,7 +133,7 @@ terraform -chdir=infra destroy
 az resource list --resource-group rg-NOMBRE -o table
 ```
 
-Si el grupo ya no existe, el último comando puede responder `ResourceGroupNotFound`: verificar también `az group exists --name rg-NOMBRE`. Key Vault conserva su registro borrado durante 7 días por purge protection; no intentar purgarlo. El backend permanece hasta terminar la entrega. Para eliminarlo, después de destruir `infra`, retira `bootstrap/backend.tf`, ejecuta `terraform -chdir=bootstrap init -migrate-state` para guardar su estado local temporalmente y luego `terraform -chdir=bootstrap destroy`. Guarda cualquier respaldo necesario fuera del repositorio y elimina las copias sensibles cuando ya no hagan falta.
+Si el grupo ya no existe, el último comando puede responder `ResourceGroupNotFound`: verificar también `az group exists --name rg-NOMBRE`. Key Vault conserva su registro borrado durante 7 días por purge protection; no intentar purgarlo. Conserva el backend hasta destruir `infra` y guardar las evidencias. Para eliminarlo, retira `bootstrap/backend.tf`, ejecuta `terraform -chdir=bootstrap init -migrate-state` para guardar su estado local temporalmente y luego `terraform -chdir=bootstrap destroy`. Guarda cualquier respaldo necesario fuera del repositorio y elimina las copias sensibles cuando ya no hagan falta.
 
 ## Línea base
 
@@ -150,8 +150,8 @@ Las marcas distinguen la implementación de las evidencias todavía pendientes.
 - [x] P2: fallas lógica y abrupta medidas, con reemplazo de instancia.
 - [x] Consulta KQL con lectura real del secreto por la identidad del VMSS.
 - [x] [Informe PDF con datos propios](output/pdf/Informe_CaribeShop.pdf).
-- [ ] Video grupal de 6–8 minutos publicado en YouTube.
-- [ ] Recursos destruidos y limpieza verificada.
+- [x] Grabación grupal completada y [enlace de YouTube incluido](https://youtu.be/JaoqaSU6ZuI).
+- [x] Recursos destruidos y [limpieza verificada](evidencias/configuracion/limpieza.json).
 
 ## Integrantes
 
