@@ -2,6 +2,7 @@ framework:
   - terraform
   - github_actions
 skip-path:
+  - .local
   - .venv
   - .terraform
   - evidencias

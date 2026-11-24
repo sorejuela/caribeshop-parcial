@@ -2,7 +2,7 @@
 
 Laboratorio de seguridad, autoscale y alta disponibilidad en Azure. Terraform crea la infraestructura y cloud-init inicia una app Python sin paquetes externos. No implementamos una tienda real: `/work` genera carga CPU reproducible y `/secret` demuestra acceso a Key Vault sin divulgar el valor.
 
-**Estado (23 de noviembre de 2026):** laboratorio desplegado y verificado en Azure. P1 completada: medición de una VM y ensayo de 30 minutos con aumento y reducción automática. P3 completada: firewall del vault, salida restringida y Policy Deny. El pipeline fallido y su corrección están documentados. Quedan por cerrar P2, la evidencia KQL de lectura, el PDF, la grabación grupal y la destrucción.
+**Estado (23 de noviembre de 2026):** laboratorio desplegado y verificado en Azure. P1 completada: medición de una VM y ensayo de 30 minutos con aumento y reducción automática. P3 completada: firewall del vault, salida restringida y Policy Deny. El pipeline fallido, su corrección y las lecturas del secreto por la identidad administrada en Log Analytics están documentados. Quedan por cerrar P2, el PDF, la grabación grupal y la destrucción.
 
 ## Arquitectura
 
@@ -148,7 +148,7 @@ Las marcas distinguen la implementación de las evidencias todavía pendientes.
 - [x] Arranque automático y pipeline bloqueante.
 - [x] Despliegue verificado, P1 con scale-out/scale-in y pruebas negativas P3.
 - [ ] P2: fallas lógica y abrupta medidas, con reemplazo de instancia.
-- [ ] Consulta KQL con lectura real del secreto por la identidad del VMSS.
+- [x] Consulta KQL con lectura real del secreto por la identidad del VMSS.
 - [ ] Informe PDF final con datos propios.
 - [ ] Video grupal de 6–8 minutos publicado en YouTube.
 - [ ] Recursos destruidos y limpieza verificada.
