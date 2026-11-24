@@ -1,0 +1,194 @@
+{
+  "consulted_utc": "2026-11-24",
+  "services": {
+    "virtual-machines-base": {
+      "source": "https://azure.microsoft.com/api/v2/pricing/virtual-machines-base/calculator/?culture=en-us&currency=USD",
+      "offers": {
+        "linux-b2plsv2-standard": {
+          "cores": 2,
+          "ram": 4.0,
+          "diskSize": 0,
+          "series": "Bpsv2",
+          "isVcpu": true,
+          "pricingTypes": "WebDirect",
+          "canada-central": {
+            "value": 0.0368
+          },
+          "us-east-2": {
+            "value": 0.0336
+          }
+        }
+      }
+    },
+    "load-balancer": {
+      "source": "https://azure.microsoft.com/api/v2/pricing/load-balancer/calculator/?culture=en-us&currency=USD",
+      "offers": {
+        "rules-included": {
+          "includedQuantity": 5,
+          "pricingTypes": "WebDirect",
+          "canada-central": {
+            "value": 18.25
+          },
+          "us-east-2": {
+            "value": 18.25
+          }
+        },
+        "data-processed": {
+          "pricingTypes": "WebDirect",
+          "canada-central": {
+            "value": 0.005
+          }
+        }
+      }
+    },
+    "ip-addresses": {
+      "source": "https://azure.microsoft.com/api/v2/pricing/ip-addresses/calculator/?culture=en-us&currency=USD",
+      "offers": {
+        "standard-static-arm": {
+          "pricingTypes": "WebDirect",
+          "canada-central": {
+            "value": 0.005
+          },
+          "us-east-2": {
+            "value": 0.005
+          }
+        }
+      }
+    },
+    "managed-disks": {
+      "source": "https://azure.microsoft.com/api/v2/pricing/managed-disks/calculator/?culture=en-us&currency=USD",
+      "offers": {
+        "standardhdd-s4": {
+          "iops": 500,
+          "maxPaidTransaction": 450000,
+          "size": 32,
+          "speed": 60,
+          "pricingTypes": "WebDirect",
+          "canada-central": {
+            "value": 1.69
+          },
+          "us-east-2": {
+            "value": 1.536
+          }
+        },
+        "transactions-hdd": {
+          "maxPaidTransaction": 0,
+          "pricingTypes": "WebDirect",
+          "canada-central": {
+            "value": 0.0005
+          }
+        }
+      }
+    },
+    "key-vault": {
+      "source": "https://azure.microsoft.com/api/v2/pricing/key-vault/calculator/?culture=en-us&currency=USD",
+      "offers": {
+        "secretssoftwareprotectedkeys-standard": {
+          "pricingTypes": "WebDirect",
+          "canada-central": {
+            "value": 0.03
+          }
+        }
+      }
+    },
+    "traffic-manager": {
+      "source": "https://azure.microsoft.com/api/v2/pricing/traffic-manager/calculator/?culture=en-us&currency=USD",
+      "offers": {
+        "base-checks-azure": {
+          "pricingTypes": "WebDirect",
+          "canada-central": {
+            "value": 0.36
+          }
+        }
+      },
+      "dns-queries-us-east-2": {
+        "prices": [
+          {
+            "limit": 1000.0,
+            "price": {
+              "value": 0.54
+            }
+          },
+          {
+            "limit": 1.7976931348623157e+308,
+            "price": {
+              "value": 0.375
+            }
+          }
+        ],
+        "pricingTypes": "WebDirect"
+      }
+    },
+    "monitor": {
+      "source": "https://azure.microsoft.com/api/v2/pricing/monitor/calculator/?culture=en-us&currency=USD",
+      "graduatedOffers": {
+        "log-analytics-data-ingestion": {
+          "includedQuantity": 0,
+          "transactionIncrement": 0,
+          "prices": [
+            {
+              "limit": 5.0,
+              "price": {
+                "value": 0.0
+              }
+            },
+            {
+              "limit": 1.7976931348623157e+308,
+              "price": {
+                "value": 2.76
+              }
+            }
+          ],
+          "pricingTypes": "WebDirect"
+        },
+        "metrics-monitored": {
+          "includedQuantity": 10,
+          "transactionIncrement": 0,
+          "prices": [
+            {
+              "limit": 10.0,
+              "price": {
+                "value": 0.0
+              }
+            },
+            {
+              "limit": 1.7976931348623157e+308,
+              "price": {
+                "value": 0.1
+              }
+            }
+          ],
+          "pricingTypes": "WebDirect"
+        },
+        "notifications-email": {
+          "includedQuantity": 1000,
+          "transactionIncrement": 100000,
+          "prices": [
+            {
+              "limit": 1000.0,
+              "price": {
+                "value": 0.0
+              }
+            },
+            {
+              "limit": 1.7976931348623157e+308,
+              "price": {
+                "value": 2.0
+              }
+            }
+          ],
+          "pricingTypes": "WebDirect"
+        }
+      }
+    },
+    "blob": {
+      "source": "https://azure.microsoft.com/en-us/pricing/details/storage/blobs/",
+      "region": "canada-central",
+      "currency": "USD",
+      "tier": "Hot ZRS flat namespace",
+      "storage_per_gib_month": 0.025,
+      "write_per_10000": 0.0688,
+      "read_per_10000": 0.0044
+    }
+  }
+}

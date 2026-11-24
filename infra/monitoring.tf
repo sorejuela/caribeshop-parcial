@@ -46,7 +46,7 @@ resource "azurerm_monitor_metric_alert" "health" {
     metric_name      = "DipAvailability"
     aggregation      = "Average"
     operator         = "LessThan"
-    threshold        = 1
+    threshold        = 100
   }
   action { action_group_id = azurerm_monitor_action_group.email.id }
 }

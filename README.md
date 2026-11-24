@@ -149,3 +149,7 @@ Estas marcas indican controles implementados en código; la evidencia en Azure e
 - [ ] Despliegue verificado, P1/P2/P3 y pruebas negativas.
 - [ ] Informe PDF final con datos propios y video grupal de 6–8 minutos.
 - [ ] Recursos destruidos y limpieza verificada.
+
+## Integrantes
+
+Isaac David Sánchez Sánchez, Santiago Andrés Orejuela Cueter, Luis Mario Díaz Martínez y Eli Weiman Amaya. Docente: Rafael Enrique Monterroza Barrios.

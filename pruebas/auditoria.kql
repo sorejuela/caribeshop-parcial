@@ -2,8 +2,8 @@
 AzureDiagnostics
 | where ResourceProvider == "MICROSOFT.KEYVAULT"
 | where OperationName == "SecretGet"
-| where identity_claim_oid_g == "PRINCIPAL_ID"
-| project TimeGenerated, OperationName, ResultType, CallerIPAddress, identity_claim_oid_g
+| where identity_claim_http_schemas_microsoft_com_identity_claims_objectidentifier_g == "PRINCIPAL_ID"
+| project TimeGenerated, OperationName, ResultType, CallerIPAddress, identity_claim_http_schemas_microsoft_com_identity_claims_objectidentifier_g
 | order by TimeGenerated desc
 
 // Ejecutar por separado para el historial de autoscale.

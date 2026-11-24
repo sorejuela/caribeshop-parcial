@@ -33,6 +33,7 @@ if args.mode == "carga":
     matplotlib.use("Agg")
     import matplotlib.dates as mdates
     import matplotlib.pyplot as plt
+    from matplotlib.ticker import MaxNLocator
 
     history = [r for r in rows(args.history) if r["Name"] == "Aggregated"]
     instances = rows(args.instances)
@@ -52,6 +53,8 @@ if args.mode == "carga":
     axes[2].step([utc(r["timestamp"]) for r in instances],
                  [int(r["capacity"]) for r in instances], where="post", linestyle="--", label="Configuradas")
     axes[2].set_ylabel("Instancias")
+    axes[2].yaxis.set_major_locator(MaxNLocator(integer=True))
+    axes[2].set_ylim(bottom=0, top=max(int(r["instances"]) for r in instances) + 1)
     axes[2].legend()
     axes[2].xaxis.set_major_formatter(mdates.DateFormatter("%H:%M", tz=timezone.utc))
     axes[2].set_xlabel("Hora UTC (p95 de la ventana reciente de Locust)")

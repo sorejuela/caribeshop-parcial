@@ -67,7 +67,7 @@ PERFIL=escalonado PEAK_USERS=100 .venv/bin/python -m locust \
   --html evidencias/p1/escalamiento.html
 ```
 
-El perfil dura 30 minutos y termina por sí mismo. Exigir aumento y reducción reales de instancias; si no ocurre, analizar CPU/cuota/créditos, ajustar carga y repetir. Exportar también el historial de Azure Monitor y las métricas CPU/Health Probe Status. El muestreo de `observar.py` muestra VMs existentes, **no garantiza que estén listas para servir**.
+El perfil dura 30 minutos y termina por sí mismo. Exigir aumento y reducción reales de instancias; si no ocurre, analizar CPU/cuota/créditos, ajustar carga y repetir. Exportar también el historial de Azure Monitor y las métricas CPU/Health Probe Status. El muestreo de `observar.py` separa VMs existentes, capacidad configurada y VMs que Azure informa sanas (`healthy`). Contrastar también con las respuestas recibidas: la cantidad por sí sola no demuestra disponibilidad.
 
 ```bash
 MPLCONFIGDIR=.local/matplotlib .venv/bin/python pruebas/analizar.py carga \
@@ -122,7 +122,7 @@ Calcular el porcentaje dentro de una ventana declarada, no sobre toda la corrida
 
 ## P3 · Seguridad
 
-1. Desde la IP autorizada, confirmar el rol del operador y una lectura del secreto usando `az keyvault secret show --vault-name "$KV" --name demo-token --query id -o tsv`. Solo se imprime el identificador, nunca el valor. Luego, con **la misma identidad** en una red no autorizada (por ejemplo, Cloud Shell fuera de la subred), ejecutar el mismo comando y guardar el error `ForbiddenByFirewall`. Un error genérico de RBAC no demuestra el bloqueo de red.
+1. Desde la IP autorizada, confirmar el rol del operador y una lectura del secreto usando `az keyvault secret show --vault-name "$KV" --name demo-token --query id -o tsv`. Solo se imprime el identificador, nunca el valor. Luego, con **la misma identidad** en una red no autorizada (por ejemplo, Cloud Shell fuera de la subred), ejecutar el mismo comando y guardar el error `ForbiddenByFirewall`. Un error genérico de RBAC no demuestra el bloqueo de red. En esta ejecución se aisló la variable retirando temporalmente solo la IP del operador del firewall, repitiendo la lectura con la misma identidad y restaurando la regla en un bloque `finally`. Se comprobó lectura válida antes y después; la subred permaneció autorizada.
 2. Ejecutar desde una VM mediante Run Command:
 
 ```bash

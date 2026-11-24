@@ -21,15 +21,19 @@ def az(*command):
 end = time.monotonic() + args.seconds
 with open(args.output, "w", newline="", buffering=1) as stream:
     writer = csv.writer(stream)
-    writer.writerow(["timestamp", "instances", "capacity", "instance_ids", "zones"])
+    writer.writerow(["timestamp", "instances", "capacity", "instance_ids", "zones", "healthy", "hostnames"])
     try:
         while time.monotonic() < end:
-            instances = az("vmss", "list-instances", "-g", args.group, "-n", args.vmss)
+            instances = az("vmss", "list-instances", "-g", args.group, "-n", args.vmss,
+                           "--expand", "instanceView")
             vmss = az("vmss", "show", "-g", args.group, "-n", args.vmss)
             writer.writerow([
                 time.time(), len(instances), vmss["sku"]["capacity"],
                 ";".join(str(vm["instanceId"]) for vm in instances),
                 ";".join(",".join(vm.get("zones") or []) for vm in instances),
+                sum(vm.get("instanceView", {}).get("vmHealth", {}).get("status", {}).get("code")
+                    == "HealthState/healthy" for vm in instances),
+                ";".join(vm.get("osProfile", {}).get("computerName", "") for vm in instances),
             ])
             time.sleep(15)
     except KeyboardInterrupt:
