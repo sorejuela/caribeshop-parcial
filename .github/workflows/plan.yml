@@ -1,0 +1,30 @@
+name: Plan de Azure
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    if: github.ref == 'refs/heads/main'
+    # El runner debe estar en la IP autorizada, con Azure CLI ya autenticada.
+    runs-on: [self-hosted, caribeshop]
+    environment: azure-lab
+    env:
+      CARIBESHOP_CONFIG_DIR: ${{ vars.CARIBESHOP_CONFIG_DIR }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Comprobar configuración local del runner
+        run: |
+          test -n "$CARIBESHOP_CONFIG_DIR"
+          test -f "$CARIBESHOP_CONFIG_DIR/backend.hcl"
+          test -f "$CARIBESHOP_CONFIG_DIR/terraform.tfvars"
+          az account show --query name -o tsv
+      - name: Plan sin aplicar cambios
+        run: |
+          terraform -chdir=infra init -input=false -backend-config="$CARIBESHOP_CONFIG_DIR/backend.hcl"
+          terraform -chdir=infra plan -input=false -var-file="$CARIBESHOP_CONFIG_DIR/terraform.tfvars"

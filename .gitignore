@@ -1,0 +1,15 @@
+.venv/
+.terraform/
+.local/
+__pycache__/
+*.pyc
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+*.tfvars.json
+backend.hcl
+crash.log
+.env
+.DS_Store
+evidencias/local/

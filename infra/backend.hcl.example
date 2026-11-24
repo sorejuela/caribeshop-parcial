@@ -1,0 +1,5 @@
+resource_group_name  = "rg-caribeshop-state"
+storage_account_name = "REEMPLAZAR"
+container_name       = "tfstate"
+key                  = "caribeshop.tfstate"
+use_azuread_auth     = true

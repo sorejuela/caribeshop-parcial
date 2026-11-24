@@ -1,0 +1,35 @@
+name: Validar parcial
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.16.1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Formato
+        run: terraform fmt -check -recursive
+      - name: Validar los dos proyectos Terraform
+        run: |
+          terraform -chdir=bootstrap init -backend=false -input=false
+          terraform -chdir=bootstrap validate
+          terraform -chdir=infra init -backend=false -input=false
+          terraform -chdir=infra validate
+      - name: Seguridad bloqueante
+        run: |
+          pip install checkov==3.4.7
+          checkov -d . --config-file .checkov.yml --skip-download
+      - name: Contrato HTTP y confidencialidad
+        run: python -m unittest discover -s pruebas -p 'test_*.py' -v

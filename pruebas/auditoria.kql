@@ -1,0 +1,12 @@
+// Sustituir PRINCIPAL_ID por terraform -chdir=infra output -raw principal_id.
+AzureDiagnostics
+| where ResourceProvider == "MICROSOFT.KEYVAULT"
+| where OperationName == "SecretGet"
+| where identity_claim_oid_g == "PRINCIPAL_ID"
+| project TimeGenerated, OperationName, ResultType, CallerIPAddress, identity_claim_oid_g
+| order by TimeGenerated desc
+
+// Ejecutar por separado para el historial de autoscale.
+AzureDiagnostics
+| where Category == "AutoscaleScaleActions"
+| order by TimeGenerated asc

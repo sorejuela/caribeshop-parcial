@@ -1,0 +1,9 @@
+framework:
+  - terraform
+  - github_actions
+skip-path:
+  - .venv
+  - .terraform
+  - evidencias
+compact: true
+quiet: true

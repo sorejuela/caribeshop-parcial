@@ -1,0 +1,4 @@
+subscription_id      = "REEMPLAZAR"
+location             = "canadacentral"
+storage_account_name = "REEMPLAZAR"
+operator_ip          = "203.0.113.10"
